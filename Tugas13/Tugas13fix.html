@@ -1,0 +1,1210 @@
+<html>
+<head>
+<title>Tugas 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" type="image/x-icon" href="starrail_hoyoverse.jpeg">
+<script>
+function Role(karakter) {
+ var i;
+ var x = document.getElementsByClassName("jenis");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(karakter).style.display = "block";
+}
+document.addEventListener("DOMContentLoaded", function() {
+ Role('Home');
+});
+</script>
+	<style>
+        .mydiv {
+            display: flex;
+            margin-bottom: 7rem;
+			align-items: center;
+			
+        }       
+
+		.mydiv p {
+			margin: 0;
+			font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+			color: #FFFFFF73;
+			}
+
+		.banner {
+            background-image: url('HSR.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+            height: 300px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+		}	
+		
+		.text p{
+			font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+			color: #FFFFFF73;
+		}
+		
+		h1 {
+			font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+			color: #FFC870;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="banner">
+    </div>
+
+    <div class="w3-bar w3-indigo w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="Role('about')">About Me</button>
+		<button class="w3-bar-item w3-button" onclick="Role('Home')">Home</button>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Destruction</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('MC Physical')">MC</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Blade')">Blade</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Arlan')">Arlan</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Hook')">Hook</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Xueyi')">Xueyi</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Clara')">Clara</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Jingliu')">Jingliu</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Dan Heng IL')">Dan Heng Imbibitor Lunae</button>
+                </div>
+            </div>
+			
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Hunt</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('Seele')">Seele</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Topaz & Numby')">Topaz & Numby</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Yanqing')">Yanqing</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Sushang')">Sushang</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Dan Heng')">Dan Heng</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Dr Ratio')">Dr Ratio</button>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Erudition</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('Herta')">Herta</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Serval')">Serval</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Qingque')">Qingque</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Himeko')">Himeko</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Jing Yuan')">Jing Yuan</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Argenti')">Argenti</button>
+                </div>
+            </div>
+			
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Harmony</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('Bronya')">Bronya</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Asta')">Asta</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Tingyun')">Tingyun</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Yukong')">Yukong</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Ruan Mei')">Ruan Mei</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Hanya')">Hanya</button>
+                </div>
+            </div>
+			
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Nihility</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('Welt')">Welt</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Silver Wolf')">Silver Wolf</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Pela')">Pela</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Sampo')">Sampo</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Luka')">Luka</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Guinafen')">Guinafen</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Kafka')">Kafka</button>
+                </div>
+            </div>
+			
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Preservation</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('MC Fire')">MC</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Fu Xuan')">Fu Xuan</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('March 7th')">March 7th</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Gepard')">Gepard</button>
+                </div>
+            </div>
+			
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Abundance</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="Role('Luocha')">Luocha</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Bailu')">Bailu</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Huohuo')">Huohuo</button>
+                    <button class="w3-bar-item w3-button" onclick="Role('Lynx')">Lynx</button>
+					<button class="w3-bar-item w3-button" onclick="Role('Natasha')">Natasha</button>
+                </div>
+            </div>
+		</div>
+		
+		<div id="Home" class="jenis">
+			<center>
+			<h1><font color="black">WELCOME</font></h1>
+			<p><font color="#000080">Website Ini Memuat Informasi Singkat Karakter Honkai : Star Rail. Terakhir dibuat pada saat versi 1.6.</font></p>
+			<p><font color="white">Note : Untuk membuka website ini. Disarankan tidak memakai Android/Iphone.</font></p>
+		</div>
+				
+		<div id="about" class="w3-container w3-animate-zoom jenis" style="display:none">
+		
+            <h2>Tentang Saya</h2>
+            <hr>
+            <center>
+                <table style="margin-bottom:20rem;">
+                    <tr>
+                        <td>
+                            <h3>
+                                <b>Nama</b>
+                            </h3>
+                        </td>
+                        <td>
+                            <h3>
+                                <b>: Faris Ziven Valeska</b>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>
+                                <b>Kelas</b>
+                            </h3>
+                        </td>
+                        <td>
+                            <h2>
+                                <b>: IF 3</b>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>
+                                <b>NIM</b>
+                            </h3>
+                        </td>
+                        <td>	
+                            <h3>
+                                <b>: 10123100</b>
+                            </h3>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+		
+		<div id="MC Physical" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+            <div class="mydiv">
+                    <img src="MC Physical.gif" style="width:438px; height:482px;">
+					<p>Anak muda yang naik ke Astral Express. 
+					<br>Dia memilih untuk bertualang dengan Astral Express demi menghilangkan krisis yang disebabkan Stellaron.</p>
+            </div>
+                <div class="text">
+                    <h1>Kisah Dirimu</h1>
+                    <hr>
+					<p>Tidak banyak yang kamu ingat. Kamu bukan berasal dari sini, juga bukan berasal dari tempat lain. Kamu bukan berasal dari mana-mana. Hingga pada akhirnya, suara bisikan yang samar terdengar di telingamu. Bujukan yang sedih dan lembut itu, serta dorongan yang munafik itu Benih sudah berakar. Kamu membuka matamu, dan orang yang berbicara itu sudah tidak ada.</p>
+					<p>Tapi suara itu semakin lama semakin jelas.
+					<br>Ada rasa perhatian yang santai, dorongan yang tenang, desakan yang kuat, serta arahan yang lembut....
+					<br>Kamu melihat benang brokat sedang menenun hari esok.</p>
+					<p>Makhluk buas raksasa turun dari yang tidak terbatas.
+					<br>Pupil mata berwarna emas menatap ke bawah dari kegelapan malam.
+					<br>Kamu tidak akan lagi ditinggalkan oleh masa lalu.
+					<br>Kamu masih akan merintis perjalanan yang panjang,
+					<br>dan semua duri yang pernah kamu
+					<br>lewati akan menjadi jalanmu sendiri.</p>
+					<p>Pluit kereta berbunyi, mendoakanmu sukses mencapai masa depan yang akan segera tiba.
+					<br>Dengan kehendakmu sendiri.</p>
+                </div>
+        </div>
+		
+		<div id="Blade" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Blade.png" style="width:438px; height:482px;">	
+				 <p>Ahli pedang yang mengorbankan dirinya untuk menjadi pedang tajam. Nama aslinya tidak diketahui.
+				<br>Dia setia pada "Destiny's Slave", serta mempunyai kekuatan menyembuhkan diri yang mengerikan.
+				<br>Dia bertarung dengan pedang kuno di tangannya. Di pedang itu terdapat bekas retakan seperti tubuh dan hatinya. </p>
+			</div>
+			<div class="text">
+				<h1> Kisah Karakter </h1>
+				<hr>
+				<p>	Satu-satunya hal yang bisa dia rasakan adalah bercak merah di matanya dan rasa besi di mulutnya. Anggota tubuhnya tidak ada reaksi.
+				— Dia pasti sudah mati.</p>
+				<p>"<em>Apa kamu ingat?</em>"
+				<br>Dia pun melongo. Suara itu seperti monster liar.
+				<br>Suara di tenggorokan tiba-tiba berhenti dan suatu benda keras yang dingin melesat melewatinya.
+				<br>Hal ini terus berulang seperti ini hingga ribuan kali.</p>
+				<p>Sangat luar biasa. Saat tubuhnya hancur, dia bisa mendengar suara samar-samar tulang dan otot yang menutup.
+				<br>Sangat luar biasa. Monster di dalam tubuh diberikan nutrisi, tapi dia ingin membuat monster itu berkembang menjadi makhluk yang sangat besar.
+				<br>Sangat luar biasa. Dia sudah kehilangan semua keinginan untuk bertahan hidup, tapi tubuhnya pulih dengan sendirinya.
+				<p>Sebelum pedang menembus kulitnya sekali lagi, dia meraihnya dengan tangan kosong lalu perlahan-lahan bangkit berdiri.
+				<br>"<em>Apa kamu ingat sekarang?</em>"
+				<br>Pikirannya masih kosong saat dia melihat mata merah wanita itu.
+				<br>— Dia pun ditusuk lagi.
+				<br>"<em>Ingatlah rasa kematian dan berikan pada mereka.</em>"
+				<br>Warna matanya merah lagi. Dia menatap pedang di atas tanah yang membunuhnya, dan sudah patah menjadi dua.
+				<br>"Bangkitlah, biarkan aku membunuhmu sekali lagi." </p>
+				</div> 
+		</div>
+		
+		<div id="Arlan" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Arlan.png" style="width:438px; height:482px;">
+				<p>Kepala Departemen Keamanan Stasiun Luar Angkasa "Herta" yang tidak pandai berbicara.
+				<br>Meskipun dia tidak memahami penelitian ilmiah, tapi Arlan rela mempertaruhkan nyawanya untuk melindungi staf yang sangat menghargai penelitian. 
+				<br>Dia sudah terbiasa dengan rasa sakit dan menganggap bekas lukanya seperti lencana kehormatan.
+				<br>Hanya saat dia memeluk Peppy, anak laki-laki itu baru bisa menurunkan kewaspadaannya dan menunjukkan senyum langka. </p>
+			</div>	
+				<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p>	Bagaimana penilaian pekerjaan Arlan di Departemen Keamanan? 
+				<br>-- Kakak, adalah mercusuar yang memandu Departemen Keamanan ke depan, dan inti yang mendukung pertempuran semua orang! Jika tidak ada kakak selama satu hari, Stasiun Luar Angkasa akan penuh dengan kesedihan, jika tidak ada kakak selama sepuluh hari, orang-orang di Stasiun Luar Angkasa akan penuh dengan kehidupan, jika tidak ada kakak selama seratus hari, Stasiun Luar Angkasa akan seperti api penyucian!
+				<br>-- Tapi dia bermain frisbee elektronik dengan Peppy selama jam kerja.
+				<br>-- Karena kakak menyelesaikan pelatihan harian Departemen Keamanan lebih cepat dari jadwal!
+				<br>Menyaksikan penampilan kakak juga menjadi inspirasi bagi kami!
+				<br>-- Tapi dia bermain frisbee elektronik dengan Peppy selama jam kerja.
+				<br>-- Bagaimana kamu tahu bahwa bermain frisbee elektronik dengan Peppy bukan bagian dari pekerjaan kakak ...
+				</p>
+				<p>	"Bermain ponsel saat sedang berpatroli, disita."
+				<br>"Bukan, kakak Arlan, seseorang berbicara buruk tentangmu di grup, kamu tidak peduli?"
+				<br>"Tidak ada waktu."
+				<br>"Ah? Ada misi mendesak? Aku mau ikut , apa yang terjadi?"
+				<br>"Bawa Peppy untuk pelatihan rehabilitasi, dan main frisbee."</p>
+				</div>
+		</div>
+
+		<div id="Hook" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Hook.png" style="width:438px; height:482px;">
+				<p>	Bos dari tim petualangan "The Moles". Dia menyebut dirinya sebagai "Hook si Hebat Dalam Kegelapan".
+				<br>Dia tidak suka dipanggil "Nak", dan merasa dirinya bisa mengatasi masalah sendiri tanpa bantuan orang dewasa.
+				<br>Orang-orang dewasa pergi bertualang di Fragmentum, Sampo pergi bertualang di atas tanah, para pasien mengambil risiko seperti bertualang dengan meminta perawatan Natasha ...
+				<br>Dengan kepemimpinan Hook, anak-anak juga harus memiliki petualangannya tersendiri! </p>
+			</div>	
+				<div class="text">						
+					<h1>Kisah Karakter</h1>
+					<hr>
+					<p>"Hari ini, aku memecahkan salah satu kabung reaksi kabur reksi tabung reaksi milik nenek sihir, lalu dimarahi." </p>
+					<p>Nenek sihir sangat galak! Dia selalu tidak membiarkan kami bermain bersama di siang hari, dan hanya bisa tidur siang, sungguh menyebalkan!"</p>
+					<p>
+					Kita harus memberontak melawan 
+					<del>tirai</del> 
+					<del>tirami</del> 
+					<del>tiran</del> 
+					tirani kekuasaannya ! Jangan biarkan dia
+					<del>meralukan</del>
+					<del>melarukan</del> 
+					melakukan apa yang dia inginkan!"
+					</p>
+					<p>"Aku akan membentuk 'The Moles', menangkap merekret merekrat merekrut semua anak di klinik! Melawan nenek sihir itu bersama-sama! Lalu, kami makan makanan lezat dan bersenang-senang bersama, tidak ada yang bisa menghentikan kami!" </p>
+					<p>"Aku adalah bos The Moles! Juga, bos klinik! Aku dimarahi nenek sihir setiap hari, dia juga selalu menyuruhku berihs-bersih beres-beris bersih-bersih! Hahahaha!" </p>
+				</div>
+		</div>
+		
+		<div id="Xueyi" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Xueyi.png" style="width:438px; height:482px;">
+				<p>	Salah satu hakim dari Ten-Lords Commission Xianzhou "Luofu". Dari 4 tugas hakim (penangkapan, pemenjaraan, penghukuman dan interogasi), dia bertanggung jawab atas bagian "penangkapan".
+				<br>Menggenggam rantai besi dan pedang pemusnah iblis, mencari pendosa berat tanpa lelah, dan menaklukkan mereka.
+				<br>Tubuh lamanya telah lenyap menjadi abu. Jadi, ia meminjam tubuh boneka untuk "kembali ke dunia", dan mendapatkan setengah hari untuk setiap penjahat yang ditangkapnya.	</p>	
+			</div>	
+			<div class="text">
+				<h1> Kisah Karakter </h1>
+				<hr>
+				<p> <em> "Ten-Lords' Verdict of Karmic Atonement."</em> </p>
+				<p> Hakim yang seputih salju itu melangkahkan kakinya keluar dari jalanan gelap, lalu mengadang jalan keluar seseorang. </p>
+				<p> Pria itu berjalan mendekat, suaranya yang gemetar tidak bisa menutupi rasa takutnya: "Kenapa ... masih belum cukup kalau cuma tangkap beberapa orang itu saja?" </p>
+				<p> Dimulai dengan <em>"kenapa",</em> tapi bukan pertanyaan, melainkan sebuah kalimat retoris ... Setelah menganalisis bahasanya beberapa kali, selain <em>"target tahu jelas lokasi komplotannya",</em> tidak ada informasi lain lagi.</p>
+				<p> Dia memutuskan untuk menjalankan misi yang diembannya. </p>
+				<p> Mata, dahi, rahang, jantung, ulu hati, perut bawah ... cuma dalam sekejap, dia sudah memetakan semua bagian yang bisa berakibat fatal dalam satu pukulan. Meskipun lawannya adalah Foxian yang terkenal dengan kelincahannya, tapi orang ini sedang lengah. Pertarungan ini bisa dia selesaikan dalam satu ronde ... maksimal dua ronde.</p>
+				<p> Tapi pukulannya meleset. </p>
+				<p> Hakim menatapnya dengan sedikit rasa penasaran. Tubuh pria itu begitu kekar, sepasang matanya tampak bersinar karena rencananya berhasil. </p>
+				<p> Napasnya terengah-engah seperti sedang terjangkit penyakit berat. Di tengah rintihan kesakitan yang tak terbendung itu, bulu-bulu halus tumbuh di sekujur tubuhnya. Anggota tubuhnya seperti dikuatkan oleh sebuah kekuatan yang tidak terlihat. Di bawah sinar bulan kawasan itu, seekor manusia serigala pun berdiri. Di hadapan sang hakim, garis-garis merah yang menutupi tubuh itu sudah berubah menjadi barisan api. </p>
+				<p><em>"Ini namanya ... cari penyakit."</em> Kebiasaan dalam benaknya membuatnya ingin menghela napas, tapi tubuhnya sudah tidak punya fungsi itu lagi.<em>"Minum obat Disciples of Sanctus Medicus cuma akan membuatmu mati lebih cepat."</em> </p>
+				<p> Tatapan pria itu sama sekali tidak goyah, <em>"Sejak ketahuan oleh kalian, umurku memang sudah tinggal beberapa hari lagi." </em></p>
+				<p> Foxian mengambil kantong obat yang ada di pinggangnya. Dia menuangkan lebih banyak obat ke dalam mulutnya seperti sedang menuangkan kacang. <em>"Makhluk tidak berperasaan seperti kalian tidak akan mengerti. Aku punya alasan untuk harus meninggalkan tempat ini!"</em></p>
+				<p> Sebuah kepalan raksasa tiba-tiba melesat dan memenuhi seluruh pandangannya. Hakim masih sempat bereaksi. Begitu kedua lengannya digoyangkan, rantai yang ada pada tubuhnya membentuk sebuah lingkaran, untuk mencoba menangkap kepalan itu. </p>
+				<p> Kepalan itu melesat ke bagian dada dengan kekuatan yang mengerikan. Tempat hakim berbaju putih berdiri pun retak dengan bentuk yang menyerupai jaring laba-laba, dan amblas ke dalam. </p>
+				<p> Tidak ada rasa sakit, cuma terdengar suara kecil dari organ ingenium yang rusak. Hakim berpakaian putih itu sempat bingung untuk sesaat. </p>
+			</div>
+		</div>
+		
+		<div id="Clara" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Clara.png" style="width:438px; height:482px;">
+				<p> Seorang gadis kecil yang dibesarkan oleh robot, dia memiliki persepsi dan ketekunan yang melebihi usianya. 
+				<br>Bagi Clara, perhitungan rasional Svarog adalah hukum dunia, tidak akan pernah salah.
+				<br>Hingga pada akhirnya dia menyadari bahwa hasil yang diperoleh dengan "perhitungan", mungkin tidak selalu bisa membawa kebahagiaan bagi semua orang.
+				<br>Gadis pemalu ini lalu memutuskan untuk jadi berani.</p>
+				</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p><em>"— Log Era Pembangunan ████/████/████."</em></p>
+				<p><em>"Seorang perempuan remaja ditemukan di tempat pembuangan sampah di sebelah tenggara Boulder Town."</em></p>
+				<p><em>"Setelah pemindaian, ternyata anak kecil itu tidak mengalami kerusakan struktural atau disfungsi tubuh, tetapi kondisi mentalnya relatif tidak stabil. Dia menolak untuk berkomunikasi tentang kondisinya sendiri, memiliki kecenderungan untuk menghindar."</em>
+					<br><em> Teruslah mencoba berkomunikasi dengannya, coba dapatkan beberapa Informasi." </em>
+					<br><em>"Bayi mulai menangis."</em></p>
+				<p><em> "Nama anak itu adalah Clara, latar belakangnya tidak diketahui."</em>
+				<br><em>"Kesimpulan: Bawa kembali ke pangkalan untuk observasi, kumpulkan informasi lebih lanjut yang relevan untuk menghasilkan rencana tindak lanjut." </em></p>
+			</div>
+		</div>
+		
+		<div id="Jingliu" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+			<div class="mydiv">
+				<img src="Jingliu.png" style="width:438px; height:482px;">
+				<p>Sang Juara Pedang Luofu yang terdahulu dan pencipta dari reputasi Cloud Knight yang tak terkalahkan.
+				<br>Kini namanya telah dihapus dari catatan sejarah, dan menjadi pengkhianat Xianzhou yang berjalan di sepanjang garis tipis di antara kewarasan dan kegilaan Mara. 
+				<br>Bagi siapa yang hendak mempelajari ilmu pedangku, aku akan mengajarinya."
+				<br>Salah satu dari "Lima Petinggi Cloud" yang legendaris, dengan gelar "Transcendent Flash".
+				<br>Dia telah melampaui konflik duniawi, dan memilih menempuh jalan yang berbeda untuk memperoleh kekuatan yang dapat mengalahkan "dewa".
+				<br>Setelah itu, catatan Xianzhou berkurang satu "Sang Juara Pedang" Xianzhou dan bertambah satu "pengkhianat" yang namanya dihapus. 
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+				<hr>
+				<p>Sebuah pedang, panjangnya 3 kaki 7 inci, ringan tanpa berat.
+				<br>Tidak ditempa dari besi biasa, tetapi terkondensasi dari sebatang es tajam. Bersinar dengan cahaya redup, seolah-olah sebilah cahaya bulan di tangan pemegangnya. </p>
+				<p>"Pedang, panjangnya 3 kaki dan 7 inci, berat sekitar 7 pon. Pegang dengan tanganmu, tikam ujungnya yang tajam ke arah musuh."
+				<br>Seorang wanita berpakaian militer mengangkat tangannya dengan lembut. Pedang seolah-olah hidup, meloncat dari rak persenjataan, dan menyelip masuk ke telapak tangan wanita itu.
+				<br>Mata pedang menancap ke tanah di samping kaki gadis itu, bergetar dengan suara mendesis yang tajam setelah guncangan.
+				<br>"Sudahkah kamu mempelajarinya? Jika sudah, maka pergilah melawan binatang perang borisin yang paling sering digunakan pasukan darat mereka. Setelah kamu membunuh Bloodshot War Wyvern, maka pelajaran pertamamu selesai."
+				<br>Dia tetap diam dan hanya melihat sekelilingnya. Ini adalah kali pertama dia meninggalkan ruang rumah sakit sejak dia diselamatkan, dan kali pertama dia menyentuh senjata yang disebut "pedang".
+				<br>"Aku sudah memerintahkan para dokter dan asisten untuk pergi. Mereka tidak akan mencarimu tanpa perintahku."
+				<br>"Cangcheng mengalami bencana, dan orang yang selamat sangat sedikit. Aku tidak tahu apa yang kamu alami sebelum tim penyelamat datang. Tapi aku tidak ingin melihatmu meratapi kengerian masa lalu seperti ini sepanjang hidupmu."
+				<br>"Tidak apa-apa kalau kamu tidak membuka mulutmu. Kamu bisa berbicara dengan ini."
+				<br>"Kamu bisa menggunakan ini untuk melenyapkan monster-monster yang merenggut segalanya dari kita. Sudah tidak banyak benda seajaib ini di dunia." Wanita berpakaian militer itu tidak mengubah ekspresinya, hanya mengalihkan pandangan ke pedang panjang di samping gadis itu.
+				</p>
+				<p> Pedang yang seperti cermin merefleksikan dirinya. Sejumlah serpihan pedang dan menyakitkan berputar seperti badai, menarik gadis itu ke masa lalu.
+				<br>Di dalam kegelapan yang suram, sebuah planet iblis bernama Rahu mengeluarkan suara rintihan, nyanyian, diiringi dengan gunung dan benua yang terbakar, yang mengarah ke semua orang.
+				<br>Orang-orang berteriak di jalanan. Mereka bergelut, berguling dalam keputusasaan kiamat, membiarkan cabang-cabang emas tumbuh tanpa henti dari dalam lubang hidung dan mulut setiap orang.
+				<br>Dia menyaksikan segalanya yang terjadi dan tidak dapat bergeming. Organ-organ dalam dirinya seperti mendidih. Sesuatu tiba-tiba meletus keluar dari Core Esse dirinya, seperti biji gandum yang matang dan siap melepaskan diri dari selubung, lalu membesar hingga tanpa batas.
+				<br>Tetapi gunung di hadapannya membuatnya menyadari bahwa dia hanyalah seekor serangga, yang akan mati karena sentuhan lembut dari ujung jari Emanator.
+				</p>
+				<p> Dalam momen saat dia hampir mati tenggelam, dia berhasil mencengkeram satu-satunya tanaman apung di sekitar.
+				<br>Pedangnya sepanjang 3 kaki dan 7 inci. Beratnya lebih dari 7 pon.
+				</p>
+			</div>
+		</div>
+		
+		<div id="Dan Heng IL" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Dan Heng IL.png" style="width:438px; height:482px;">
+				<p>
+				Wujud Vidyadhara Dan Heng yang muncul setelah menerima kekuatan yang ditinggalkan reinkarnasi "Imbibitor Lunae" sebelumnya.
+				<br>Sekalinya menerima mahkota tanduk yang agung di atas kepalanya, dia harus menerima semua kelebihan dan kekurangan penjahat itu. 
+				<br>Tapi dari awal sampai akhir, dia bukanlah dirinya.
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Dalam kegelapan yang pekat, dia seolah-olah kembali ke dalam Telur Vidyadhara, berputar-putar di antara gelombang dan mimpi.</p>
+				<p>Dia bermimpi berdiri di depan altar, menari dan melantunkan nyanyian ritual. Namun lagu dan gerakan tangan hanyalah tiruan belaka. Cahaya yang bersinar dari matanya, badai yang bergolak dalam darahnya, adalah hakikat sejatinya. Dengan mudahnya, dia merajut gelombang yang seperti kabut di Scalegorge Waterscape, menenangkan "naga" yang gelisah ke dalam pohon raksasa yang merambat. Saat raungan bergema ke langit, Scalegorge Waterscape akan tenang kembali selama ratusan tahun, dan misinya akan selesai.</p>
+				<p>Setelah upacara selesai, dia berbalik dan melihat ke belakang. Dalam sekejap, tangga yang baru saja dia turuni telah penuh dengan tokoh-tokoh terhormat bertanduk naga dan berpakaian seperti kerajaan. Mereka terlihat seperti ilusi dalam cermin, setiap dari mereka berbalik dan lengan bajunya berputar dengan gerakan, siap untuk pergi satu demi satu dalam susunan yang terhitung sangat cermat. Orang-orang yang tak terhitung jumlahnya membentuk tangga menuju langit, yang membentang ke ruang hampa yang tak berujung. Wajah semua orang ini akan menyapanya setiap pagi di cermin meja riasnya. Itu adalah wajahnya.</p>
+				<p>Tidak, itu adalah wajah Naga Terhormat Pertama. Dia tersenyum getir, menutupi wajahnya dengan tangan, seolah-olah ingin memastikan apakah dia bisa mencopot topeng ini dan mengembalikannya kepada pemilik aslinya.</p>
+				<p>Tapi dia tidak bisa.</p>
+			</div>
+		</div>		
+		
+		<div id="Seele" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Seele.png" style="width:438px; height:482px;">
+				<p>Anggota "Wildfire" yang bersemangat dan gagah berani. Dia tumbuh di lingkungan Underworld yang berbahaya dan terbiasa melakukan segala hal sendirian.
+				<br>Melindungi dan dilingdungi, menekan dan ditekan, segala hal yang ditunjukkan dunia pada Seele sesederhana itu ... bukan hitam, berarti putih 
+				<br>- Sampai kemudian "gadis itu" muncul. </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p> Pertarungan pertama Seele dalam hidupnya adalah untuk dirinya sendiri. </p>
+				<p> Pada saat itu dia berkeliaran tanpa tujuan di jalanan setiap hari, pergi ke kantor bantuan panti asuhan untuk meminta air saat haus, dan menukar sisa makanan ke pedagang kaki lima saat lapar.
+				<br> Di belakang Rivet Town, semua orang telah melihat gadis gelandangan yang tidak takut langit, dan semua orang ingin menghindari si kecil yang biadab dan keras kepala. </p>
+				<p>Suatu malam yang panas, dia merasa mulutnya kering karena terlalu banyak bermain. Dia datang ke rumah bantuan, tetapi menemukan bahwa air sumur di ember besi telah habis. Dia juga datang untuk meminta air pada saat yang sama dengan seorang pria gelandangan dengan wajah keriput. 
+				<br>Setelah bertarung dengan bawahananya, pria gelandangan melarikan diri, dan Seele memenangkan hak untuk minum air sumur sendirian. </p>
+				<p>Seele melihat gelandangan itu lagi tiga hari kemudia. Melalui jendala klinik, dia melihat sosok kurus terbaring di ranjang rumah sakit, sekarat. </p>
+				<p> Sejak itu, dia selalu meninggalkan sedikit air sumur untuk mereka yang datang setelahnya. </p>
+			</div>
+		</div>
+		
+		<div id="Topaz & Numby" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Topaz & Numby.png" style="width:438px; height:482px;">
+				<p> Topaz adalah manajer tingkat tinggi "Departemen Investasi Strategis" di bawah Interastral Peace Corporation, dan juga pemimpin dari Tim Piket Utang Khusus. 
+				<br>Menjadi salah satu anggota "Sepuluh Orang Berhati Batu" di usia yang muda, bidang keahlian Topaz adalah "menagih utang". 
+				<br>Rekannya, Warp Trotter yang bernama "Numby", memiliki kemampuan untuk melihat keberadaan "orang kaya". 
+				<br>Pekerjaan yang berhubungan dengan keamanan, menagih utang, atau akuntansi tidak akan menjadi masalah. 
+				<br>Sekarang ini, mereka bersama-sama mengembara di galaksi, menyelidiki berbagai sengketa utang yang memengaruhi jalannya bisnis IPC. </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p> "Destor, kamu sudah pernah lihat CV ini?" "Yang mana yang Anda ... oh, dia ya — Dia baru saja menyelesaikan magangnya di tim penelitian pemasaran, dan membuat sedikit kekacauan di sana ... eh, dalam arti yang bagus." "Dia sudah selesaikan magangnya? Ah ...." "Ada yang salah, Tuan Dvorski?" "Tidak ada. Hanya penasaran saja. Karena usia saat dia memulai kariernya adalah usia termuda yang tercatat di departemen. Selain itu, CV dia juga sangat mengagumkan. Coba kulihat ... Oh! Dia bahkan menandatangani "kontrak seumur hidup"?! Tak kusangka kita bisa menemukan seorang yang berbakat seperti ini dari planet yang penuh keputusasaan ...." "Aku sudah mengeceknya dengan rekan-rekan kita. Segala yang tertera di CV dia itu benar. Dia bahkan tidak menulis hasil tes perekrutannya di sana. Ternyata dia mendapat nilai tinggi dalam ilmu akturia, mikro dan makroekonomi, keuangan antargalaksi, dan ilmu manajemen. Bahkan tes fisiknya juga hampir sempurna. Satu-satunya topik yang gagal adalah ...." "Hmm? Apa itu?" "Etika bisnis. Dia bahkan tidak muncul di tes itu. 'Aku benar-benar benci formalitas.' — itulah yang dikatakan gadis itu. </p>
+			</div>
+		</div>	
+		
+		<div id="Yanqing" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Yanqing.png" style="width:438px; height:482px;">
+				<p> Letnan Xianzhou "Luofu" yang bersemangat tinggi sekaligus pendekar pedang terkuat.
+				<br> Dia hidup untuk berpedang dan terobsesi dengan pedang. 
+				<br>Setiap memegang pedang, tidak ada yang berani meremehkannya, yang sudah jenius sejak masih kanak-kanak.
+				<br>Mungkin hanya waktulah yang bisa menumpulkan ujung pedangnya yang tajam. </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p> Letnan termuda dalam sejarah Cloud Knight, penjaga Jenderal Jing Yuan, dan kolektor pedang Artisanship Commission ... Dengan gelarnya yang begitu banyak, dan gosip yang bertebaran, membuat orang yang mendengarnya hampir tidak bisa menebak bahwa sang jenius muda ini hanyalah anak-anak. </p>
+				<p> Seingatku, Yanqing selalu mengikuti Jing Yuan, dan membantu Jing Yuan mengatasi masalah Seat of Divine Foresight. Jing Yuan mengajarinya seni pedang dan taktik perang. Setelah melalui pelatihan selama bertahun-tahun, Yanqing menjadi sangat hebat.  </p>
+				<p>Berdasarkan penilaian Cloud Knight, dia bisa memblokir serangan enam pedang terbang secara bersamaan, dan hal itu tidak pernah dapat dilakukan oleh kepala pelatih Cloud Knight meskipun sudah berlatih selama ratusan tahun. Bakat pertempuran yang dimiliki Yanqing sangatlah hebat. Ungkapan di antara orang-orang Xianzhou yang dapat mewakilkan bakat pertempuran Yanqing adalah "Si Jenius Seni Bela Diri". </p>
+			</div>
+		</div>
+
+		<div id="Sushang" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Sushang.png" style="width:438px; height:482px;">
+				<p>Pendatang baru yang sederhana dan antusias di Cloud Knight, memegang pedang besar.
+				<br>Menantikan legenda dalam sejarah Cloud Knight, ingin menjadi sosok terkenal.
+				<br>Karena ini, Sushang dengan tegas mematuhi titah "Jangan pernah menolak mereka yang butuh pertolongan, selalu berbuat baik dan berintrospeksi diri", dan menjalani kehidupan yang sibuk membantu orang lain. </p>			
+			</div>
+			<div class="text">		
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p> Dunia cerah, padang rumput bergoyang. Bintang-bintang seperti menenun ke laut, dan turis berduyun-duyun mendatangi gerbang langit. Siapa pun yang masuk dan keluar Luofu dapat melihat ke atas dan melihat gerbang lebar, di mana penghalang ruang angkasa seperti gangguan pusaran, tidak ada penyangga, perahu datang dan pergi, sangat luar biasa. </p>
+				<p> Gerbang ini disebut "Jade Gate", dan sebenarnya adalah pintu masuk kawasan Xianzhou. Sedikit jauh di bawah gerbang, ada pengembara yang menunggu, berniat pergi ke Luofu. Di antara mereka adalah seorang gadis muda yang mengenakan pakaian kuning aprikot, wajahnya sekitar sebelah sampai emam puluh tujuh menurut standar Xianzhou, tetapi dia tidak tahu seperti apa dia sebenarnya, dan tidak tahu kekuatan aneh apa yang dia gunakan untuk memegang pedang yang berat itu. </p>
+				<p> Pedang itu panjangnya dua kaki dan satu inci, sangat tidak biasa. Meski dibungkus kain putih, terlihat sederhana dan kuno, namun bilah di kedua sisinya setipis sayap, cukup untuk mematahkan sehelai rambut. Ketika para turis melihat prajurit ini, mereka semua melihat ke samping dengan takjub, sedikit menunjukkan sedikit depresi, dan berbisik:
+				<br><em>"Betapa aneh! Sebelumnya ibu mengajariku untuk melafalkan rumus hati ini, caranya adalah dengan menenangkan pikiran, lalu kenapa tidak berhasil?"</em></p>
+				<p> Sebelum dia bisa mengatakan kata-kata yang lebih, seorang pria Vidyadhara di sana mengangkat dan melambaikan tangannya, menarik gadis itu untuk maju: <em>"Selanjutnya!"</em> Gadis itu terkejut dan menggertakakkan giginya, tetapi tidak punya pilihan selain maju. </p>
+				<p>"<em>Emas dan batu dipatahkan, sumpah ...</em>" Kata gadis itu kepada pria Vidyadhara itu.
+				<br>"<em>Emas dan batu bisa dipatahkan, dan sumpah tidak akan dilanggar.</em>" Pria Vidyadhara itu berkata dengan sedih:
+				<br>"<em>Lewati saja formalitas, untuk apa melafal mantra? Nama, asal, dan alasan masuk semuanya sebutkan satu per satu.</em>"
+				<br>Gadis itu tercengang, mengira dia menyalahgunakan kebiasaan Luofu lagi. Tak berdaya, tidak punya pilihan lain selain mengambil cermin penglihatan, melapor dengan jujur atas permintaan pria itu:
+				<br>"<em>Nama: Sushang. Barang bawaan: Pedang "Xuanyuan". Asal ...</em>"
+				"<em>... *Tsk* "Yao" dari "Yaoqing" ini bagaimana penulisannya?</em>" </p>
+			</div>
+		</div>
+	
+		<div id="Dan Heng" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Dan Heng.png" style="width:438px; height:482px;">
+				<p> Anak muda yang dingin dan pendiam, menggunakan tombak yang dikenal sebagai "Cloud-Piercer". 
+				<br>Dia bertugas menjadi pelindung Express selama ekspedisi perintisan yang panjang.
+				<br>Dan Heng tidak pernah membicarakan masa lalunya. Dia justru bergabung dengan Kru Express untuk melepaskan diri dari masa lalu yang pernah dia perbuat.
+				<br>Lantas, akankah Express membawanya meninggalkan "masa lalu"?</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p> Hari yang baru telah dimulai.</p>
+				<p>Ini adalah hari yang sangat biasa di kapal raksasa ini, pasar baru saja dibuka, embun di daun belum mengering. Namun remaja yang menyeberang jalan itu belum pernah melihat pemandangan ini dengan matanya sendiri. Bahkan sebelum dia menyadari betapa berbedanya sudut-sudut kota dari gambaran di buku, dia masih menikmati hangatnya matahari di lehernya.</p>
+				<p>Untuk pertama kalinya dia melihat dengan jelas tubuhnya, yang menjadi miliknya, dan milik nama saat ini.</p>
+				<p>Ketika pemuda itu tiba di pelabuhan, para tentara yang mengawalnya melepaskan belenggu terakhir untuknya. Dia berjalan maju tanpa melihat ke belakang. Samar-samar, dia merasa beberapa pasang mata di kota sedang mengawasinya, penuh kebencian. </p>
+				<p>Baru setelah pesawat luar angkasa lepas landas, dia menoleh dan melihat sekali lagi ke sini. Seperti yang dijelaskan di buku, ini memang kapal yang besar dan megah.</p>
+				<p>Dia hanya melihatnya sekali, lalu menoleh ke sisi lain, di mana bintang-bintang redup, dan masa depan belum diketahui.</p>
+				<p>Tapi dia diam-diam melihat, tidak mengucapkan sepatah kata pun.</p>
+			</div>
+		</div>
+		
+		<div id="Dr Ratio" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+			<div class="mydiv">
+				<img src="Dr Ratio.png" style="width:438px; height:482px;">
+				<p>Anggota Intelligentsia Guild.
+				<br>Memiliki kepribadian yang eksentrik, mulut yang tajam saat berbicara namun elegan.
+				<br>Wajah yang terdapat dalam kepala gipsum itu ternyata tampan.
+				<br>Seorang sarjana yang lugas dan egois dari Intelligentsia Guild, sering menyembunyikan wajahnya dengan patung ukiran kepala dari gipsum yang aneh.
+				<br>Dia telah menunjukkan kecerdasannya yang luar biasa sejak masih belia, namun kini ia menganggap dirinya "orang awam".
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p>Veritas Ratio yang menyebut dirinya sendiri "Dr. Ratio" ini memang kontroversial seperti penelitiannya. Di kampung halaman Ratio, setidaknya ada delapan film dokumenter yang menceritakan tentang legendanya. Dalam belasan memoar tentang dirinya, ada banyak sekali pendapat, tapi tidak ada yang cukup meyakinkan. Untuk menutupi kekurangan ini, penulis pergi mengunjungi Profesor Rond yang berperan penting dalam kehidupan Ratio. Karena sudah lanjut usia, Profesor Rond tidak dapat berbicara dengan normal. Tapi saat penulis menyebut nama Ratio, dia langsung menjadi sangat antusias. Dengan bantuan keluarga dan muridnya, penulis mendapatkan sebuah surat rekomendasi yang sudah menguning, tapi masih tersimpan dengan baik. </p>
+				<p>"</p>
+				<p><em>Kepada Komite Penerimaan Universitas Veritas Pertama yang terhormat,</em></p>
+				<p><em>Aku Rond, profesor yang sudah pensiun dari jurusan matematika Universitas Kebebasan Galaksi. Mengingat reputasi Universitas Veritas Pertama dalam mendidik orang-orang berbakat, saya ingin merekomendasikan seorang pelajar yang bernama Ratio untuk melanjutkan studinya ke Universitas Veritas Pertama. Meski Ratio saat ini adalah seorang murid sekolah menengah, tapi kemampuannya dalam bidang matematika, fisika, bahkan filsafat sudah jauh melebihi persyaratan mengikuti pendidikan sarjana di universitas pada umumnya.</em></p>
+				<p><em>Selama masa belajarnya, Ratio berhasil memecahkan persamaan matematika yang rumit dalam waktu yang jauh lebih cepat dari yang diharapkan. Mahasiswa sarjana di kelas saya bahkan tidak bisa memahami konsep-konsep itu. Karena penasaran, saya diam-diam membagikan manuskrip tentang Dugaan Rond kepadanya. Meski saya adalah pengusung dugaan itu, tapi saya belum berhasil membuktikannya. Setelah diskusi selama beberapa hari, dia mengutarakan sebuah pemikiran yang ajaib dan mengejutkan, lalu berhasil menyelesaikan argumen yang terakhir. Makalah ini akan diterbitkan dalam waktu dekat, Anda akan percaya dengan kata-kata saya setelah membacanya.</em></p>
+				<p><em>Dalam komunikasi dengannya selama ini, Ratio menunjukkan persepsi, rasa ingin tahu dan kreativitas yang luar biasa. Setiap hari dia akan bangun pagi untuk berlatih dan langsung menyelam ke dalam lautan pengetahuan. Menurut saya, dia adalah orang yang paling cocok dengan konsep universal tentang orang jenius. Dia sangat antusias dan bersemangat, bakatnya benar-benar ... alami.</em></p>
+				<p><em>Karena sekolah di sini tidak dapat memberikan pengajaran dengan tingkat yang lebih tinggi, saya harap Universitas Veritas Pertama bersedia menerima Ratio untuk melanjutkan studinya di sana. Saya jamin dengan reputasi saya, dia pasti akan mencapai prestasi yang melampaui pencapaian di zaman ini dan mengharumkan nama Universitas Veritas Pertama di seluruh alam semesta.</em></p>
+				<p><em>Hormat saya,
+				<br>Rond
+				<br>Kalender Filsuf ██-██-██ 
+				<br>"</em></p>
+			</div>
+		</div>
+		
+		<div id="Herta" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="Herta.png"style="width:438px; height:482px;">
+				<p>Pemilik sebenarnya Stasiun Luar Angkasa "Herta".
+				<br>Sebagai manusia dengan IQ tertinggi di The Blue, dia hanya melakukan apa yang dia minati, Dia akan langsung membuang proyek apapun segera setelah dia kehilangan minat - contoh terbaik adalah stasiun luar angkasa.
+				<br>Dia biasanya muncul dalam bentuk puppet yang di kontrol jarak jauh, "Harusnya ada 70% kemiripan dengan wajaku kecil." Ujar Herta. </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+			    <p>Naskah Nyonya Herta adalah aset yang tak ternilai.</p>
+				<p>	Kelangkaannya bukanlah karena Nyonya Herta jarang mau menghabiskan pena dan tinta untuk menulis di atas kerta, tetapi untuk orang jenius seperti itu, tidak ada sesuatu pun di dunia ini yang layak untuk dicatatnya.</p>
+				<p>Hasil penelitian ilmiah yang dapat diperoleh staf biasa setelah 10 tahun, atau bahkan seumur hidup, dapat menerangi bidang penelitian ilmiah yang asing. Tapi baginya, itu sama saja seperti menyalakan lampu. Siapa yang akan membuang waktu untuk mencoba mendokumentasikan hal-hal sepele seperti itu dengan carra yang sistematis?</p>
+				<p>Tidak hanya Nyonya Herta, tetapi faktanya, dokumen pembuatan seluruh anggota "Genius Society" adalah harta yang langka. Namun, Nyonya Herta lebih murah hati, lebih simpatik, dan memahami orang biasa sepertiku. Dia menempatkan manuskrip di Stasiun Luar Angkasa begitu saja, sebagai "dermawan" saat membuka harta berisikan benda langka yang dikumpulkan untuk setiap anggota staf untuk penelitian.</p>
+				<p>Tentu, kami semua sangat yakin dan setuju bukan karena Nyonya Herta malas menyelesaikan buku, dia meninggalkan menuskrip yang dia tulis di mana-mana, agar ketika berhadapan dengan investor di masa depan, bisa berkata - "Selesai, tapi tidak bisa menemukannya".</p>
+			</div>
+		</div>
+	
+		<div id="Serval" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="Serval.png"style="width:438px; height:482px;">
+				<p>Putri sulung Landau yang bebas dan pemberontak. 
+				<br>Dia pernah menjadi teman dekat Cocolia. 
+				<br>Minatnya kini telah membuatnya menjadi seorang mekanik. 
+				<br>Dia membuka sebuah workshop bernama "Neverwinter" di Belobog yang mengalami Salju Abadi. 
+				<br>Dia sering menutup workshop untuk mengadakan pertunjukan rock 'n' roll.
+				<br>Kalau ada yang bertanya tentang profit yang dihasilkan dari workshop ... "Workshop ini cuma hobi, sayang. 
+				<br>Aku tidak kekurangan uang." </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p>Ini adalah kakak Kapten Silvermane Guard Gepard Landau, mekanik dan bintang rock paling berbakat di seluruh Belobog ....</p>
+				<p>"<em>Berhenti, hentikan. Smpan bagian pertama, dan tinggalkan paruh kedua.</em>"</p>
+				<p>"<em>Aku sarankan jangan meringkas identitasku seperti ini ... Aku, Serval Landau, tidak pernah menjadi aksesori siapa pun.</em>"</p>
+				<p>"<em>Eh, kamu belum menulis apa-apa? Baik, kalau begitu aku akan menambahkan sesuatu sendiri. Jika ada yang rusak, kamu bisa datang ke Neverwinter Workshop di Administrative District untuk menemukanku.</em>"</p>
+				<p>"<em>Ingin mendengarkan rock 'n' roll? Hei, lebih bagus lagi. Tetap bisa datang ke Neverwinter Workshop di Administrative District, memeriahkan kota bersama 'Mechanical Fever'!</em>"</p>
+			</div>
+		</div>
+		
+		<div id="Qingque" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="Qingque.png"style="width:438px; height:482px;">
+				<p>Diviner biasa di Divination Commission tidak akan pernah malas-malasan saat bisa bermalas-malasan.
+				<br>Mengikuti harapan orang tuanya, dia diterima di Divination Commission, tapi ternyata apa yang dia kira pekerjaan santai adalah tempat kerja dengan intensitas tinggi.
+				<br>Setelah beberapa tahun pengalaman, Qingque akhirnya mengasah keterampilannya — kalaupun dipindahkan departemen, dia tetap menjadi Diviner peringkat terendah.
+				<br>Kalau tidak ada pekerjaan ya baca buku atau bermain Celestial Jade ... inilah kehidupan, apa lagi yang bisa kuminta? </p>
+			</div>
+			<div class="text">			
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p>Legenda Qingque dimulai di sekolah Lyceum.</p>
+				<p>Sejak pendaftaran Qingque hingga kelulusannya, setiap kali ada hasil ujian yang dicatat dalam buku, kata "Qingque" harus diikuti dengan angka "Lu Shi" ... tidak terkecuali.</p>
+				<p>Pada awalnya, guru di sekolah Lyceum mengira Qingque cuma biasa-biasa saja dan tidak cocok di bidang akademis, jadi mereka tidak terlalu mendorongnya. Tapi karena angka-angka yang mencolok terus memenuhi rapornya, para guru akhirnya menyadari kalau semua ini mungkin bukan kebetulan.</p>
+				<p>Segera, pembicaraan panjang dengan mentor menjadi hal biasa bagi Qingque. Setelah terlalu banyak mendengar, akan tahu bahwa cendekiawan yang hebat ini hanya dapat menggunakan beberapa aksen berulang kali, pada awalnya, mereka memanggilnya "pendiam dan imut", "berbakat dan cerdas", dan kemudian mengeluh lagi "Sayang sekali otak yang baik digunakan di tempat yang salah", dan akhirnya hingga "Jika kecerdikan ini bisa didedikasikan untuk belajar, apa yang akan terjadi" ....</p>
+				<p>Tapi kehidupan seperti apa yang dia inginkan, Qingque lebih tahu dari mentornya. Selama pembicaraan dari hati ke hati, terus mengulangi "Ya, ya, ya", "hm, ya, ya", berbalik dan tertidur di meja kelas, kemudian nilai rendah dalam ujian — Ini adalah jawaban yang diberikan Qingque ketika menghadapi ancaman dan ejekan dari para mentor.</p>
+				<p>Mereka akhirnya kehilangan kesabaran. Akhirnya, mereka hanya bisa meninggalkan catatan di kolom evaluasi kelulusan Qingque:</p>
+				<p>"Senjata yang sulit."</p>
+				</div>
+			</div>
+			
+		<div id="Himeko" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="Himeko(1).png">
+				<p>	Seorang ilmuwan yang berjiwa petualang. 
+				<br>Dia menemukan Astral Express terdampar di kampung halamannya saat masih muda.
+				<br>Bertahun-tahun kemudian, Himeko akhirnya memperbaiki kereta itu dan memulai perjalanannya mengarungi bintang-bintang. 
+				<br>Dia sadar bahwa ini hanyalah suatu permulaan. Di perjalanan "perintisan" dunia baru, dia memerlukan rekan yang lebih banyak lagi ...
+				<br>Meski rekan-rekannya memiliki tujuan yang berbeda, tapi mereka tetap berada di bawah langit berbintang yang sama.</p>
+			</div>
+				<div class="text">
+				<h1>Kisah Karakter</h1>
+                <hr>
+				<p>Gadis itu hilang.
+				<p>Dia tidak tahu kapan tersesat. Dia hanya berjalan, terus berjalan di malam hari, mengejar matahari dan bulan, berulang-ulang, sampai dia terjatuh.</p>
+				<p>Dia ingat bagaimana penampilannya ketika pertama kali masuk perguruan tinggi, dan ingat jurusan yang dia pilih -- dinamika navigasi antarbintang, dan sekarang, dia terbaring di jalan berlumpur.</p>
+				<p>Dia melihat ke langit berbintang, dan pada saat ini dia melihat bintang jatuh, satu, dua, tiga ... Lalu ada banyak lampu kecil, indah, berkedip-kedipp, dan akhirnya, cahaya yang luar biasa menembus malam.</p>
+				<p>Anggota tubuhnya menyeret tubuhnya ke depan, menuntunnya ke ujung daratan, awal lautan, garis pantai, didorong oleh air pasang seperti kereta yang terdampar, sendirian dan tersesat.</p>
+				<p>Dia masuk ke dalam, melihat pemandangan di luar jendela kapal mulai berubah. Kereta itu menunjukkan dunia luar biasa yang tak terhitung jumlahnya. Mereka jauh, di luar kampung halaman mereka, tetapi mereka sangat dekat sehingga bisa dicapai dengan kereta api.</p>
+				<p>Dia mencoba memperbaiki kereta, yang mulai sebentar, tetapi cukup untuk membawanya melintasi langit di atas tanah airnya. Sekilas dia melihat jalan pulan, dari ketinggian tinggi, perjalanan pulang sudah dekat, dan bahkan laut di kampung halamannya begitu tidak berarti.</p>
+				<p>Dia bertanya apakah ingin pergi bersamanya. Dia penasaran perjalanan seperti apa itu.<p></p>
+				<p>"Ini adalah perjalanan ke titik awal."</p>
+				<p>"Ayo pergi." Gadis itu berkata tanpa berfikir, "Sama seperti kamu membawaku pulang, aku akan membawamu pulang. </p>
+			</div>
+		</div>
+		
+		<div id="Jing Yuan" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="JingYuan.png" style="width:438px; height:482px;">
+				<p>Disebut sebagai "Divine Foresight" — jenderal dengan prediksi ilahi, merupakan salah satu jenderal dari Tujuh Arbiter.
+				<br>Terlihat malas, namun ternyata sangat teliti.
+				<br>Dia tidak menganggap penyelamatan situasi kritis sebagai ajang untuk menunjukkan kecerdasan. 
+				<br>Jadi dia selalu mengusahakan yang terbaik dalam hal-hal biasa untuk menghindari kemungkinan terjadinya masalah. 
+				<br>Karena selalu berhati-hati dalam merencanakan setiap hal, Xianzhou telah bertahun-tahun hidup dalam kedamaian.
+				<br>Namun sikap Jing Yuan yang terlihat malas membuat dirinya mendapatkan julukan "Jenderal Tidur." </p>
+			</div>
+			<div class="text">
+			<h1>Kisah Karakter </h1>
+			<hr>
+				<p><em>Aku ingin bertanya kepada Master Diviner, mengapa papan catur susunan bintang ini persegi dan bidak caturnya bulat?</em>"</p>
+				<p>"<em>Metode ini didasarkan pada langit yang bundar? Di zaman dahulu, mereka percaya bahwa bumi itu datar. Catur susunan bintang ini meniru kisah lama negara-negara yang bersaing untuk mendominasi daratan, tentu saja itu adalah persegi. Lalu bidak catur ... Orang-orang pada waktu itu percaya bahwa langit itu bulat seperti kubah, dan bidak catur itu mengalir seperti bintang, maka secara alami mereka bulat.</em>"</p>
+				<p>"<em>Tidak, salah. </em>"</p>
+				<p>"<em>Aku sudah memperkirakan 48 gerakan yang belum kamu lakukan. Jing Yuan, kalau ingin mengalihkan perhatianku dengan mengajukan pertanyaan, aku sarankan kamu mundur lebih awal.</em>"
+				<p>"<em>Haih, kenapa Fu Qing meragukanku?</em>"
+				<p>"<em>Jangan menyela, lanjutkan.</em>"
+				<p>"<em>Seperti yang dikatakan Fu Qing, catur adalah metafora, dan permainan adalah metafora bagi manusia. Aturan perang tertulis dengan jelas, dan tindakan masing-masing telah lama ditentukan, mereka hanya melompat maju dan mundur. Karena itu, arah maju dan mundur menjadi alasan persegi. Untuk bidak catur, orang bijak mengatakan "gunakan kebijaksanaan seperti lingkaran", setiap bidak dalam formasi memiliki pikirannya sendiri, jadi digunakanlah catur bulat.</em>"</p>
+				<p>"<em>Buku 'Pengumpulan Pasir Giok' menyebutkan asal catur bintang, Jing Yuan, aku banyak membaca, jadi jangan bohong padaku!</em>"</p>
+				<p>"<em>Pindahkan kereta awan ke kiri tiga kali dan masuk empat kali, jenderal. Fu Qing, kamu kalah.</em>"</p>
+				<p>"<em>Tunggu, tunggu! Kenapa aku tidak melihat ini di preview tadi? Kembali, mulai dari awal.</em>"</p>
+				<p>"<em>Bidak catur itu seperti manusia, masing-masing dengan pikirannya sendiri. Kita tidak menyesal, kenapa harus memulai kembali? Haha, kenapa kepala divisi bisa dibohongi?</em>"</p>
+			</div>
+		</div>
+		
+		<div id="Argenti" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+			<div class="mydiv">
+				<img src="Argenti.png" style="width:438px; height:482px;">
+				<p>Kesatria klasik dari "Knight of Beauty".
+				<br>Sifatnya yang jujur, berintegritas dan terhormat membuatnya patut dihormati. Dia seorang pengembara yang menjelajahi alam semesta seorang diri dan mempraktikkan Path "Beauty".
+				<br>Menjaga reputasi "Beauty" di alam semesta adalah tugas Argenti: Untuk menjalankan tugas ini, dia harus taat dalam bertindak, dan bisa membuat orang terkesan saat mengalahkan musuh dengan senjatanya.</p>
+			</div>
+			<div class="text">
+			<h1>Kisah Karakter </h1>
+			<hr>
+				<p>Kampung halamannya pernah mengalami peperangan selama bertahun-tahun. Di tengah peperangan, ingatan masa kecilnya penuh dengan pertumpahan darah dan asap ledakan. Waktu dia ada di bawah tanah untuk berlindung dari tembakan meriam, dia membongkar timbunan batu bata dan menemukan sebuah okarina.
+				<br>Dia mencoba meniupnya untuk melantunkan melodi ....
+				<br>Tapi musik yang dia mainkan itu malah lebih mirip seperti sebuah tragedi.</p>
+				<p>Tapi bagi dirinya, suara okarina itu adalah satu-satunya "tempat pelarian bagi jiwanya".</p>
+				<p>Seiring waktu, nada-nada itu terbenam dalam ingatannya dan menjadi sebuah momen yang "misterius" baginya. Hingga bertahun-tahun kemudian, dia menyelamatkan anak kecil di tengah peperangan saat sedang mengembara ke suatu tempat. Waktu anak kecil itu memberinya sebuah okarina sebagai tanda terima kasih, ingatannya pun kembali terlintas.
+				<br>Dia memegang okarina itu, teksturnya begitu mewah dan sempurna. Ketika dia meniupnya, tekanan udara akan mengeluarkan nada-nada yang membangkitkan emosi dalam ingatannya ....
+				<br>Tapi musik yang dia mainkan tetap saja seperti sebuah tragedi.</p>
+				<p>"<em>Aku bodoh sekali, memainkan alat musik ini saja tidak bisa ....</em>"
+				<br>Dia merasa tidak tenang. Setelah berpikir sejenak, keberanian pun muncul kembali di dalam hatinya. Dia kembali mencoba meniupnya untuk melantunkan melodi ....
+				<br>Nadanya tidak berubah, tapi kali ini dia tertawa.</p>
+				<p>"<em>Aku tetap mencintainya, aku benar-benar mencintainya ... Aku percaya ia adalah wujud dari 'Beauty'.</em>"
+				<br>Dia menyimpan okarina itu dan melanjutkan perjalanannya tanpa keraguan.</p>
+			</div>
+		</div>
+		
+		<div id="Bronya" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Bronya.png" style="width:438px; height:482px;">	
+				<p>Penerus "Supreme Guardian" Belobog. Dia adalah komandan Silvermane Guard yang muda dan andal.
+				<br>Sejak kecil Bronya sudah menerima pendidikan ketat. Dia memiliki keanggunan serta keramahan yang diharapkan dari seorang ahli waris.
+				<br>Namun setelah melihat kondisi Underworld yang menyedihkan, benih keraguan mulai timbul di pikiran pemimpin masa depan Belobog ini.
+				<br>"Apa pelatihan-pelatihan yang kuterima sungguh bisa membantuku memimpin orang-orang mencapai kehidupan yang mereka inginkan?" </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Gadis belajar menyembunyikan pikiran mereka sejak usia dini. Setiap hari, dia dan anak-anak lain berjalan di jalan batu yang sama, memainkan permainan yang sama, berbagi preferensi yang sama. Tapi dia tidak pernah diliputi oleh kehidupan yang sepele dan hambar, setiap kali ada celah dalam kesendirian, dia akan selalu duduk di batu abu-abu dan melihat ke atas, membayangkan langit lengkap yang tidak terputus oleh cakram di atas kepalanya.</p>
+				<p>Gadis itu melihat para pekerja berkeringat, tekanan untuk bertahan hidup menghancurkan semangat mereka untuk hidup. Melihat mata yang lelah, dia jatuh dalam kebingungan: Apakah hidup ditakdirkan seperti ini? Sama seperti langit yang luas dipotong oleh cakram baja besar, mungkin kebebasan yang dia rindukan ditakdirkan untuk tidak lengkap.</p>
+				<p>Dia berjuang untuk melepaskan diri dari rawa, diam-diam menuliskan cita-cita yang akan dia terapkan dalam hidupnya di jalan batu yang berdebu.</p>
+				<p>"<em>Membuat dunia tempat yang lebih baik</em>"</p>
+			</div>
+		</div>
+		
+		<div id="Asta" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Asta.png" style="width:438px; height:482px;">	
+				<p>Kepala Peneliti di Stasiun Luar Angkasa "Herta", juga nona besar dari keluarga aristokrat.
+				<br>Seorang astronom yang penuh dengan rasa ingin tahu, sangat pandai dalam menangani peneliti Stasiun Luar Angkasa ahli dalam mengatur staf yang berbeda-beda pendapat.
+				<br>Gadis muda yang sangat ingin tahu dan energik. Dia adalah Kepala Peneliti Stasiun Luar Angkasa "Herta".
+				<br>Baik dalam mengelola staf yang berbeda-beda pendapat, ataupun membalas Intelligentsia Guild dengan sopan namun tegas, semua hal itu dilakukan Asta semudah membalikkan tangan. 
+				<br>Karena memimpin stasiun luar angkasa ... jauh lebih mudah dari mengambil alih perusahaan! </p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Saat Asta masih muda, dia sudah mulai memilih teleskopnya sendiri, selalu mendengar kekaguman para tetua di samping telinganya. Dia cukup bangga akan hal ini, karena teknologi cermin utama teleskop dan sistem bintang pemandu, dia dapat dengan cepat mengerti.</p>
+				<p>Hingga suatu hari ketika dia mendekati untuk menguping, dia sadar bahwa mereka hanya mengaguminya, seorang gadis kecil dapat memilih barang yang begitu mahal.</p>
+				<p>Preferensi pribadi tidak ada di mata penonton, mereka hanya ingin memperlakukannya sebagai gadis kecil yang dimanjakan.</p>
+				<p>"<em>Hm ... Aku sedang meneliti protostar, semoga suatu hari bintang yang kutemukan akan diberi nama sesuai namaku ... seperti para astronom hebat itu ...."
+				<br>"Hanya hal kecil ini? Untuk hadiah ulang tahun tahun ini, bagaimana jika memberi nama planet ini dengan namamu? Cukup dua, harganya tidak seberapa."
+				<br>"...."
+				<br>" Asta, kamu ke mana!</em>"</p>
+			</div>
+		</div>	
+		
+		<div id="Tingyun" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Tingyun.png" style="width:438px; height:482px;">	
+				<p>Lahir di Xianzhou "Yaoqing" dan dikirim ke Cloud Knight "Luofu" untuk menerima pelatihan militer.
+				<br>Dia mengenakan pedang keluarga yang diberikan ibu dan menantikan masa depan yang sudah ditulisnya. 
+				<br>Seorang Foxian cantik, kepala perwakilan dari serikat dagang Sky-Faring Commission "Whistling Flames". 
+				<br>Tingyun terlahir dengan lidah yang bijak dan pandai, setiap kali dia berbicara, orang pasti ingin mendengar lebih banyak darinya.
+				<br>Di bawah kendalinya, perdangangan Xianzhou berangsur-angsur menjadi terkenal. 
+				<br>Jika tidak bisa bertarung, cobalah untuk tidak bertarung, kalau bisa membujuk, cobalah untuk membujuk ... ini adalah prinsip Tingyun.</p>				
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p>Manusia di dunia sering berkata: "Foxian dilahirkan untuk menjadi pedagang". JIka menghabiskan banyak waktu di kedai teh "Sleepless Earl", kamu dapat memahami fakta ini secara mendalam.</p>
+				<p>"Kamu tidak tahu, Foxian mengguncang kipas pengumpul tulang yang indah sambil menatap pria yang ragu di depannya, "Satu sisi air dan tanah dapat mendukung satu sisi kehidupan. Jika memindahkan benih jeruk dari tanah air pahit ke tanah suci Vonwacq, mereka akan membentuk jeruk yang manis dan berat. Hal ini wajar karena keempat mata angin Vonwacq, mereka akan membentuk jeruk yang manis dan berat. Hal ini diperkenalkan ke negara kita dan diserahkan kepada suku Vidyadhara di Scalegorge Waterspace untuk dibudidayakan dengan hati-hati, panjang ikan lentera akan berlipat ganda menjadi lebih dari 1 meter."</p>
+				<p>"Rencana terbaru 'Whistling Flame' adalah dengan hati-hati memilih spesies dengan potensi komersial paling besar, mengirimkannya dengan aman dan selamat dengan Starskiff dari serikat dagang. Kurang dari sepuluh bulan, mendapatkan batch pertama barang yang dikembalikan. Istana kristal di dasar Thalassa akan semakin berwarna, dan akan menjadi spesialisasi perdagangan ekspor negara."</p>
+				<p>Pria dengan insang memuntahkan beberapa gelembung seperti mutiara, yang dalam bahasa gelembung mewakili persetujuan yang agak ragu-ragu. Kemudia dia mengucapkan kata yang indah dengan pita suaranya: "Awalnya aku mengira "Whistling Flame" adalah tentang menimbun, membeli dan menjual. Kamu berencana untuk mendobrak situasi di mana bisnis transportasi didominasi oleh perusahaan? Katakan, ingin berapa?</p>
+				<p>"Sembilan dari sepuluh biaya bolak-balik. Bisnis pada akhirnya dari tangan kanan, maksudku tangan kiri ke tangan kanan. Seperti kata pepatah, 'Bisnis besar tidak berharga.' Asal pemimpin Istana Kristal menyetujui, aku ingin menukar selembar kerta ... ehem, kontrak jangka panjang sebagai seorang teman bagaimana?"</p>
+				<p>Pada hari ini, Tingyun tidak hanya menogosiasikan kesepakatan, tetapi juga menjadi teman jangka panjang untuk Alliance.</p>
+			</div>
+		</div>	
+		
+		<div id="Yukong" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Yukong.png" style="width:438px; height:482px;">	
+				<p>Pemimpin Sky-Faring Commission dari Xianzhou "Luofu". 
+				<br>Yukong adalah seorang pilot berpengalaman dan seorang penembak jitu. 
+				<br>Sekarang dia terkubur di bawah tumpukan dokumen yang membosankan dan sulit untuk keluar.
+				<br>Kepala Sky-Faring Commission Xianzhou "Luofu" memiliki temperamen yang lembut dan berpengalaman dalam menangani berbagai hal. 
+				<br>Ketika dia masih muda, dia adalah seorang pilot, menjadi komandan utama dengan rekor yang sangat baik, tetapi dia tidak lagi terbang ke langit karena perang yang tragis. 
+				<br>Meskipun dia sudah kehilangan ketajamannya dan sekarang berkonsentrasi pada tugas resminya, tapi di setiap pelayaran "Luofu" selalu ada bayang-bayang dirinya.</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p>"Tahukah kamu? Hanya ada tiga jenis orang yang dapat memasuki Sky-Faring Commission.</p>
+				<p>Orang yang dapat berbicara dengan baik, orang yang mencari kegembiraan, dan orang yang ingin kembali pada bintang-bintang, tanpa pengecualian."</p>
+				<p>Kami berbeda dengan orang Xianzhou yang hidup selamanya. Meskipun Foxian juga dikenal sebagai "Spesies Berumur Panjang", tapi umur kami kurang lebih hanya sekitar 300 tahun. Karena itu, banyak dari kami yang lebih rela menikmati kesenangan hidup sepenuhnya — mengejar kehidupan tertinggi dengan segenap hati dan jiwa.</p>
+				<p>Aku? Sekarang berusia 246 tahun. Aku tinggal selangkah lagi untuk masuk ke liang kubur, sudah jauh melewati usia kesenangan. Kamu mungkin tahu aku sangat agresif di masa mudaku. Di antara generasi orang Xianzhou yang lebih tua, kamu mungkin pernah mendengar rekorku menerobos 6 lampu merah berturut-turut.</p>
+				<p>Wakti itu aku baru beranjak dewasa, dan aku diseret ke depan jenderal ... Coba tebak akhirnya? Dia bahkan memintaku bergabung dengan Sky-Faring Commission, cuma karena teknik mengemudi Starskiff-ku yang luar biasa. Mungkin dia merasa aku dapat membuat banyak perubahan di Sky-Faring Commission.</p>
+				<p>Saat itu, dia menyebutku "gadis nakal". Lalu kemudian, mereka memanggilku "Ace".</p>
+			</div>
+		</div>
+		
+		<div id="Ruan Mei" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Ruan Mei.png" style="width:438px; height:482px;">	
+				<p> Seorang anggota Genius Society dan ahli bidang ilmu kehidupan. 
+				<br>Dia bekerja sama dengan Herta dan timnya untuk mengembangkan Simulated Universe.
+				<br>Seorang sarjana yang lemah lembut dan anggun. Anggota ke-81 "Genius Society", ahli dalam bidang ilmu kehidupan.
+				<br>Dia mendapatkan perhatian Nous berkat bakat dan dedikasinya yang luar biasa. Dia memulai studi dan penjelajahannya tentang asal usul kehidupan di sebuah sudut rahasia.
+				<br>Jadi dia diundang oleh Herta karena hal tersebut, dan berkolaborasi mengembangkan "Simulated Universe" bersama dengan Screwllum dan Stephen.
+				<br>Dia diam-diam sangat menyukai drama tradisional dan camilan. Dia juga sangat tertarik dengan sulaman.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p>Di masa kecil, ibunya yang seorang "ilmuwan" adalah inspirasi pertama baginya.</p>
+				<p>Karena tumbuh dalam sebuah rumah kecil yang menjadi tempat berkumpulnya keluarga pecinta sains, kehidupannya berhubungan erat dengan cinta dan kasih sayang .... Oleh karena itu, sejak kecil dia sudah sadar akan perbedaan kecil dan bermacam aroma dalam setiap bentuk "cinta".</p>
+				<p>Neneknya berambut perak dan suka mendengar opera yang terdengar seperti gumaman. Ayahnya memakai sepatu bot yang berbulu dan sangat besar.</p>
+				<p>Ayah dan ibunya saling mencintai, tapi sering bertengkar.</p>
+				<p>Dia adalah seorang anak perempuan yang acuh tak acuh. Dia sering melakukan kesalahan, tapi juga sering dimaafkan.</p>
+				<p>"<em>Aku lebih dekat dengan Bibi Arlice daripada yang lainnya. Dia sering memberi aku kue. Cinta darinya adalah yang terbaik.</em>"</p>
+				<p>Tidak lama kemudian, gadis itu berubah menjadi keras kepala. Pengertiannya terhadap "cinta" juga melenceng dari yang diajarkan di dalam buku.</p>
+				<p>Saat dia sudah beranjak lebih dewasa, ibunya memerintahkannya untuk berjalan selangkah demi selangkah, bersama-sama menjelajahi planet es yang besar itu.</p>
+				<p>Di tengah perjalanan, gadis itu menghela napas dan menghentikan langkah kakinya, dia mengamati "kehidupan" — lebih tepatnya, bekas kehidupan — yang ajaib dan memesona yang terkubur di bawah lapisan es.</p>
+				<p>Setiap selesai meneliti dan kembali ke rumah adalah waktunya untuk mendapat "hadiah" ... </p>
+				<p>Satu gigitan kecil kue itu akan meninggalkan sedikit aroma di langit-langit mulut: Penantian sederhananya selalu membuat penelitian ibunya dipenuhi dengan aroma yang harum.</p>
+				<p>Berangkat dari sebuah kampung halaman yang mendapat berkat "Abundance", mereka menaiki kapal terbang penelitian untuk menjelajahi lebih banyak dunia.</p>
+				<p>Dikelilingi bermacam bom kilatan, syal, penutup kepala dari kain, pita dan bordiran, gadis itu merasakan kebahagiaan di tengah "kehidupan" yang berasal dari perputaran data.</p>
+				<p>"<em>A-Ruan, kalau sudah makan mochi pandan, jangan lupa cuci tangan sebelum menyentuh meja laboratorium ya.</em>"</p>
+			</div>
+		</div>	
+		
+		<div id="Hanya" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Hanya.png" style="width:438px; height:482px;">	
+				<p>Salah satu hakim dari Ten-Lords Commission Xianzhou "Luofu".
+				<br>Menerima perintah dari Ten-Lords, mengendalikan kuas ramalan, membaca jenis-jenis dosa manusia, serta memberikan hukuman penebusan karma.
+				<br>Salah satu hakim dari Ten-Lords Commission di Xianzhou "Luofu". Dari empat tugas hakim yaitu penangkapan, pemenjaraan, penghukuman dan interogasi, dia bertugas sebagai hakim "interogasi".
+				<br>Dia bertugas membaca dosa kejahatan para tahanan, lalu mencatat kejahatan dan hukuman mereka dengan "kuas ramalan".
+				<br>Karena sepanjang hari bekerja dengan metode ramalan mimpi, dia menyaksikan begitu banyak karma dari orang-orang yang terserang mara. Akibatnya, dia sejak dulu sudah tidak tertarik lagi dengan segala hal yang bersifat duniawi.
+				<br>Ketulusan hatinya cuma akan terlihat saat dia beraksi bersama kakaknya, Xueyi, yang juga seorang hakim.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p>Peti mati yang besar itu seperti perahu yang terombang-ambing di tengah badai, seperti akan tenggelam di lautan kesadaran. Dia membiarkan amarah, hasrat, kebencian, ketakutan, dan kelelahan orang-orang menerjang tubuhnya, bagaikan ombak yang tidak terlihat sedang menghempaskan tubuhnya dari puncak ombak ke puncak ombak lainnya.</p>
+				<p>Seperti orang yang mati tenggelam, dia akhirnya akan merelakan egonya yang tidak berarti dan menyatu dengan lautan kekacauan ini ....</p>
+				<p><em>Dulu dia pernah menjadi petugas Realm-Keeping Commission yang sibuk sepanjang hari, yang terus berusaha keras menyelesaikan pekerjaannya yang menggunung, dan terus berusaha mencapai promosi. Pada akhirnya, setelah dari dalam kepalanya terdengar suara senar putus yang melengking, dia mulai berjalan di jalanan seperti hantu yang bergentayangan ....</p>
+				<p>Selanjutnya, dia menahan duka yang mendalam dan memasukkan anaknya yang cacat sejak lahir ke dalam kapsul yang penuh dengan media kultur Starskiff, meskipun dia dan suaminya sudah lama sekali menantikan kelahiran anak itu ....</p>
+				<p>Dia pernah menjadi seorang Cloud Knight yang diinjak-injak oleh serigala. Cakar tajam itu merobek wajahnya hingga membentuk "senyuman" yang aneh. Sejak saat itu, dia selalu merasa sakit setiap kali tersenyum ....</p>
+				<p>Ramalan menunjukkan kalau hidupnya akan berakhir. Karena tidak bisa menerimanya, dia mencoba mengubah perhitungan Matrix of Prescience untuk menempatkan dirinya ke pusat matriks agar bisa menggunakan seluruh kekuatannya. Namun, kekuatan Matrix of Prescience malah mengoyak pikirannya dengan keji ....</p>
+				<p>Dia menghancurkan ingenium yang dia rancang dengan sepenuh hati, mentor yang selalu mempersulit dirinya pun ikut hancur bersama ingenium itu. Dia tahu dia sudah tidak punya harapan untuk menjadi pengrajin, tapi apa yang bisa dia kerjakan selain menjadi pengrajin ...?</em>
+				<p>Dia menjadi setiap orang dari mereka, dia menjadi segalanya bagi mereka. Bagaikan tinta yang menetes dan menyebar di permukaan air, sebuah pemandangan muncul di depan matanya:</p>
+				<p><em>Dia berada di bawah langit biru, di tengah ladang gandum yang tumbuh dengan subur. Sepasang tangan yang lincah menyematkan sebuah mahkota bunga di atas kepalanya. Dia membiarkan ranting, daun, dan aroma bunga memeluk tubuhnya seperti sepasang tangan hangat yang memeluknya itu ....</em></p>
+				<p>Kehangatan yang familier itu membuatnya terbangun dari informasi yang mampu menenggelamkan dan membunuh dirinya.</p>
+				<p>Dia sadar kalau dirinya bukanlah mereka. Dia bukan setiap orang dari mereka, dia juga bukan segalanya bagi mereka. Seketika itu juga, dia jatuh dan menjadi setetes air di tengah lautan kesadaran, dia teringat akan namanya sendiri dan tugas yang dia emban ....</p>
+				<p>Dia adalah seorang hakim di Ten-Lords Commission dengan kode "Hanya".</p>
+				<p>Saat menyadari dia terbangun, Aurumaton yang berdiri di samping peti mati itu langsung mencatat dengan gerakan secepat kilat.</p>
+				<p>Hasil penghakiman karma sudah ditentukan. Nama yang muncul di dalam mimpi itu tertulis di atas sebuah Jade Abacus. Saat matahari terbenam di kawasan, akan ada banyak orang yang meninggalkan dunia ini. Mereka tidak akan tahu kalau akhir hidup mereka diputuskan oleh seseorang di pelosok Xianzhou. Setelah beberapa jam kemudian, orang itu pun akan melupakan mereka.</p>
+			</div>
+		</div>	
+		
+		<div id="Welt" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Welt.png" style="width:438px; height:482px;">	
+				<p>Anggota senior kru Astral Express.
+				<br>Dia menikmati keajaiban petualangan yang sudah lama tidak dialami. Semangat yang tersembunyi di dalam hatinya juga kembali berkobar.
+				<br>Dia terkadang akan menggambarkan pengalaman petualangannya di dalam buku.
+				<br>Mantan pemimpin Anti-Entropy yang bijaksana dan berpengalaman. Dia mewarisi nama "dunia" — Welt, dan pernah menyelamatkan Bumi dari kehancuran berkali-kali.
+				<br>Setelah insiden St. Fountain berakhir, Welt terpaksa pergi ke sisi portal lain bersama dengan penggagas insiden tersebut.
+				<br>Mungkin dia sendiri tidak pernah membayangkan bahwa ada petualangan dan rekan baru yang sedang menunggunya di sana.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Dalam perjalanan ke gerbang bintang, Welt mengambil pena dan mulai membuat sketsa gambar di atas kertas. Selama delapan tahun terakhir, dia terus mengulangi pekerjaan ini.</p>
+				<p>Saat kembali ke masa lalu, dia menggunakan cara lain untuk membuat objek, selama kesan itu muncul di benaknya. Tapi dia tetap tidak bisa menganggapnya sebagai "ciptaan", karena itu hanyalah penampakan asli dunia, dan tidak ada hubungannya dengan pikirannya sendiri.</p>
+				<p>Ini hanya tugasnya untuk mewarisi nama "dunia". Jika dunia membutuhkannya, dia akan menjadi pahlawan tanpa ragu-ragu. Dia jatuh berkali-kali dan diejek berkali-kali, tetapi dia akan selalu berdiri di depan semua orang, dari masa lalu hingga masa depan, tidak pernah berubah.</p>
+				<p>Hanya sekarang, dia akan memulai perjalanan yang baru.</p>
+			</div>
+		</div>	
+		
+		<div id="Silver Wolf" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Silver Wolf.png" style="width:438px; height:482px;">
+				<p>Peretas hebat yang menganggap alam semesta sebagai permainan. 
+				<br>Sistem pertahanan serumit apa pun dapat dipecahkan Silver Wolf dengan mudah. 
+				<br>Pertarungan serangan peretasan dan pertahanan antara dia dan Screwllum dari "Genius Society" telah menjadi legenda di dunia peretas. 
+				<br>Berapa banyak lagi level yang harus dikalahkan di alam semesta? Silver Wolf sangat menantikannya.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Dia bermain dengan joystick, hari demi hari. Restoran cepat saji yang cuma punya satu karyawan, ruang bawah tanah yang disulap menjadi aula arkade, dan beberapa konsol game lama, ini adalah masa kecilnya.</p>
+				<p>Dia tidak memiliki nama resmi, tidak punya nomor identifikasi, hanya nama panggilan yang diberikan oleh nyonya rumah.
+				<br>Dia juga tidak punya teman, tapi dia tidak sendirian.
+				<br>Dia menyukai game "Pong", dua garis horizontal dan satu titik cahaya, permainan bola yang paling sederhana, yang dapat dia mainkan sepanjang hari.
+				<br>Dia menyukai "Battle Wheel 32", langit berbintang yang digambar dengan dot matrix, delapan blok warna berbeda, dan cuma ada satu aturan, yaitu menjadi yang nomor satu, bagaimanapun caranya.
+				<br>Dia menyukai "Geometric Wars", "Odysseus", dan "Star Cheetah". Catatan skor dari game-game ini penuh dengan skor tinggi yang ditinggalkan oleh pelanggan.</p>
+				<p>Dia bermain dengan joystick, hari demi hari.
+				<br>Hingga suatu hari, cuma ada satu nama yang tersisa di semua catatan skor.
+				<br>Dia lalu meletakkan joystick dan melihat kembali ke ruang bawah tanah yang kosong.
+				<p>Ada banyak orang yang beristirahat di sini, tetapi sangat sedikit yang tinggal.
+				<br>Banyak orang pergi dari sini, tetapi sangat sedikit yang kembali.
+				<br>Dia berkedip, lalu mematikan layar.</p>
+				<p>Malam itu, satu-satunya karyawan restoran cepat saji berpamitan kepada nyonya rumah dan menjadi orang selanjutnya yang pergi.
+				<br>Game berjudul "Basement" itu berakhir pada hari ini.</p>
+			</div>
+		</div>	
+		
+		<div id="Pela" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Pela.png" style="width:438px; height:482px;">
+				<p>Petugas sekretaris untuk Silvermane Guard.
+				<br>Dia memiliki kepribadian yang serius dan dihormati oleh para anggota Silvermane Guard lainnya.
+				<br>Seorang petugas intelijen Silvermane Guard baik, muda dan brilian Baik untuk pergerakan pasukan, distribusi material, atau kondisi medan, Pela dapat dengan tenang menjawab pertanyaan tanpa kesalahan.
+				<br>Untuk casing ponsel Pela ... "Ini tidak ada hubungannya dengan pekerjaan."</p>
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Berikut ini adalah kutipan dari halaman 102 "Catatan Wawancara dan Seleksi Silvermane Guard <font color="white">• <br>Volume 24</p>
+				<p><font color="white">Informasi dasar tentang peserta ujian ...</font></p>
+				<br>"Namaku Pelageya Sergeyevna, kamu bisa memanggilku 'Pela'."
+				<br>"Aku lulus dari Fakultas Ilmu Sosial dan Fakultas Sains Sekolah Belobog, dengan gelar kehormatan ganda dalam Studi Perang dan Ilmu Infomasi."
+				<br>"Kamu bertanya tentang hobi? Maaf, tolong beri aku waktu untuk mengatur bahasa ..."
+				<br>"... Hobiku adalah 'Studi Musik Prasejarah Belobog', itu saja."
+				<br>"Tidak, tidak ada hobi lain ... percayalah padaku."</font>
+			</div>
+		</div>	
+		
+		<div id="Sampo" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Sampo.png" style="width:438px; height:482px;">
+				<p>Pedagang keliling yang bebas berkeliaran antara Underworld dan Overworld.
+				<br>Mudah akrab, ramah, humoris dan suka melucu.
+				<br>Seorang pedagang yang ahli bersilat lidah. Di mana ada sesuatu yang "menguntungkan", maka di situlah ada sosok Sampo.
+				<br>Informasi Sampo yang tak tertandingi membuat orang-orang mau tidak mau mendekatinya, tapi menjadi "pelanggan" dia bukanlah hal yang benar-benar bagus.
+				<br>Karena asalkan harganya cocok, "pelanggan" juga bisa berubah menjadi "produk jualan" kapan saja.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>"Halo semuanya, aku Bruhelle Possion, reporter Harian Kristal, dan lokasiku saat ini adalah air mancur di Administrative District Plaza. Di sampingku adalah anggota yang menyebut dirinya "Asosiasi Bantuan Korban Dark-Blue Scam". Aku akan melakukan wawancara singkat dengannya."</p>
+				<p>"Halo, apakah Anda bisa menceritakan pengalaman Anda ditipu?"</p>
+				<p>"Ah ... sungguh mengesalkan! Si rambut biru itu, aku ingin dia mati sengsara!"</p>
+				<p>"Tuan, kita sedang siaran langsung ... mohon tenang."</p>
+				<p>"Ehem ... Baiklah. Harian Kristal? Benar begini, laporkan lebih banyak tentang orang-orang yang menderita, dan kurangi pada gosip tentang Architect ..."</p>
+				<p>"... Aku beri tahu, pencuri kecil berambut biru itu telah melarikan diri ke Administrative District lagi! Baru kemarin, dia mengambil tiga kilo rempah-rempah roti hitam dari tokoku! Tiga kilo! Kamu tahu berapa lama ini cukup untuk para pejabat itu? Selanjutnya dia pasti akan menjarah pabrik rempah-rempah!"</p>
+				<p>"Tenang, Tuan! Kami sangat bersimpati dengan Anda. Anda menyebutkan pabrik rempah-rempah Belobog?"</p>
+				<p>"Hm ... aku memang menyebutkannya. Apa itu intinya?"</p>
+				<p>"Pabrik ini, bisakah Anda menjelaskan lokasi spesifiknya?"</p>
+				<p>"Hm ... kenapa?"</p>
+				<p>"Lihat, sebagai media, kami ingin berkontribusi pada keadilan sosial ... hanya dengan memberi tahu kami lokasi pabrik yang tepat, baru dapat memobilisasi Silvermane Guard dan warga untuk mencegah pencurian, benar tidak?"</p>
+				<p>"Hm ... masuk akal. Kalau begitu dengarkan baik-baik, alamat pabriknya adalah ..."</p>
+			</div>
+		</div>	
+		</div>	
+		
+		<div id="Luka" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Luka.png" style="width:438px; height:482px;">
+				<p>Petarung dengan lengan mekanis yang optimis dan periang. 
+				<br>Terampil dalam seni bela diri campuran dan salah satu anggota "Wildfire".
+				<br>Dari ring tinju hingga medan pertempuran, dari petinju hingga petarung, Luka menggunakan kekuatannya untuk melindungi orang-orang di Underworld.
+				<br>Karena dia pernah mengalami keputusasaan, makanya dia lebih bersemangat untuk membawa harapan kepada orang lain.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Dia mengayunkan palu baja, lagi dan lagi. Percikan api meletus di depan matanya, dan suara benturan logam meredam bunyi otot dan persendian yang bergerak. Tinggi anak laki-laki itu tidak cukup untuk mencapai perkakas di bagian atas lemari besi, tapi kekuatan yang dia gunakan untuk mengayunkan baja palu sudah bisa menyaingi pengrajin yang paling terampil. Toko ini adalah seluruh hidupnya. Ayahnya berjongkok di samping pintu dan berulang kali membersihkan tanda toko tua yang berkarat. Terkadang dia akan berbaring di tempat tidur yang keras dan membayangkan masa depannya — tapi ke mana pun pikirannya mengembara, pada akhirnya sosok ayahnya akan selalu muncul dalam pikirannya. Ada suara langkah kaki mendekat, dan dia untuk sementara meletakkan pekerjaannya. Ayahnya berdiri, dengan sedikit wibawa pada sosoknya yang kekar tapi agak bungkuk. Lagi-lagi orang dari "Wildfire". Sejak Moltammerville memberlakukan jam malam, mereka sering mengunjungi toko ini dan permintaan pesanan berbagai senjata juga meningkat pesat. Saat anak laki-laki itu memikirkan hal ini, dia kebetulan menatap mata pelanggan lama yang bertindak sebagai pemimpin kelompok. Dia memiliki kulit gelap dengan sosok tinggi dan ramping, tatapan tajamnya segera melembut saat dia bertatapan mata dengan anak laki-laki itu, lalu dia pun mengangguk kecil. "Selamat datang, Ketua Oleg! Ada yang bisa aku bantu hari ini?" "Sabar, tuan. Aku hari ini datang cuma mau mengobrol denganmu saja." Pria itu menunjuk Luka.Mengobrol tentang putramu." </p>
+			</div>
+		</div>
+		
+		<div id="Guinafen" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Guinafen.png" style="width:438px; height:482px;">
+				<p>
+				Pendatang asing yang tinggal di Xianzhou secara kebetulan. 
+				<br>Kini dia adalah seniman jalanan yang penuh semangat.
+				<br>Seorang pendatang asing yang secara tidak sengaja berakhir tinggal di Xianzhou. 
+				<br>Kini dia menjadi seorang seniman jalanan. Nama aslinya "Guinevere", dan "Guinaifen" adalah nama ala Xianzhou yang diberikan Sushang untuknya.
+				<br>Menghadapi kehidupan barunya di "Luofu" dan mengandalkan kecintaannya pada budaya Xianzhou, Guinaifen berhasil mempelajari keterampilan-keterampilan penting dengan cepat, seperti makan mie terbalik, memecahkan batu besar yang diletakkan di atas dada, menangkap peluru dengan tangan kosong, dan lainnya.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Halo? Halo? Bisa dengar tidak? Selamat malam, keluargaku tercinta! Dan selamat datang di livestream Little Gui~ Terima kasih untuk komentar super "BigFlower_49886"! "Little Gui lagi-lagi tidak siaran selama lebih dari setengah bulan. Kamu tidak mau streaming lagi?" Tidak mungkinlah! Aku akhir-akhir ini terlalu sibuk di dunia nyata, jadi sudah lama tidak siaran. Maaf ya~ Belakangan ada banyak hal di dunia nyata yang cukup menarik untuk diceritakan. Kalau ada kesempatan, aku akan menceritakannya pada kalian lain kali. Untuk hari ini, sama seperti yang kutulis di judul, hari ini adalah "Malam Musik! Little Gui Menyanyi Lagu Rakyat Xianzhou!" Akhir-akhir ini aku merasa akrobatik mungkin lebih cocok untuk acara langsung, jadi aku berencana untuk melakukan beberapa siaran langsung seni pertunjukan. Kali ini kita bisa menganggapnya sebagai percobaan pertama~ Kalau kalian suka, jangan lupa untuk ikuti dan bagikan, serta berikan hadiah ya, karena dengan begitu kalian bisa ikut undian berhadiah di siaran langsung ini! Terima kasih kepada "MilkPowderPowder" untuk komentar supernya! Wah, sudah lama tidak berjumpa, "MilkPowderPowder"~ "Tidak masalah, aku suka menonton apa pun yang disiarkan Little Gui." Terima kasih untuk dukungannya! Jangan pergi dari siaran ini sampai aku selesai ya! Mwah~! Uhuk Izinkan aku menyesuaikan audionya. Satu, dua, tiga, satu, dua, tiga, tes, tes, tes ...! Baik! Sekarang latihan vokal! Aku sudah menulis semua lirik untuk pertunjukan doggerel (pembacaan sajak berima sederhana) malam ini! .... Sudah lama tak ke Aurum Alley, sekarang jadi keren padahal dulunya acak brekele! Ada tempat yang berubah jadi tak dikenal, ada juga tempat yang sama seperti masa dulu yang terkenal. Warga-warga sekitar sehat bugar, wajah semua orang bersinar dengan mata berbinar. Jarang-jarang aku menyanyi dengan irama cepat, harap para penonton berikan dukungan yang tepat. Berikan tepuk tangan dan sorakan, lemparkan beberapa Strale untuk pertunjukan. Hari ini kita tidak berkisah tentang perbuatan dewa yang dahsyat, juga tidak membicarakan tentang Reignbow yang melawan pohon Muldrasil yang keramat. Hanya akan berkisah tentang gadis cantik di Aurum Alley hari ini, tempat di mana diriku Little Gui pulang dan pergi. .... </p>
+			</div>
+		</div>	
+		
+		<div id="Kafka" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+			<div class="mydiv">
+				<img src="Kafka.png" style="width:438px; height:482px;">
+				<p>
+				Anggota "Stellaron Hunter". Seorang profesional cantik yang tenang dan santai.
+				<br>Dia memanfaatkan keajaiban kata-kata untuk membuat Trailblazer menyerap Stellaron.
+				<br>Hobinya adalah berbelanja dan merapikan mantel.
+				<br>Di dalam dokumen buronan Interastral Peace Corporation, Kafka hanya meninggalkan namanya dan catatan "Hobi mengumpulkan mantel".
+				<br>Orang-orang hanya mengetahui sedikit informasi tentang Stellaron Hunter ini. 
+				<br>Mereka hanya tahu jika dia adalah salah satu anggota paling terpercaya "Destiny's Slave" Elio. 
+				<br>Demi mencapai "masa depan" yang diprediksi oleh Elio, Kafka pun memulai aksinya.
+				</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>"Kafka. Perempuan ras manusia. Asal tempat dari Pteruges-Ⅴ: New Babylon. Dia adalah anggota inti Stellaron Hunter, dan wakil "Destiny's Slave". Dia bertanggung jawab atas pelanggaran berikut: Dua Kasus Serangan Pier Point; Kasus Pencurian Pier Point; Kasus Hilangnya Trovys; Kasus event Stellaron Jemorse, Bayjhana, Shilla-39C, Ulmora, 7-Midville, Loar-51, dan Dro'a; Empat Kasus Peretasan terhadap Pier Point; Kasus Peretasan terhadap Planet Screwllum; Kasus Peretasan terhadap Herta; Kasus Pemberontakan Jepella. Diduga memiliki keterkaitan dengan kejahatan berikut ini: Insiden Stellaron di Sich-Lala, Inupeis, Oun-G7, Zukov, Lidovia, Illily, Attouine, Buhayama. Level Buronan: Sangat tinggi, tidak peduli hidup atau mati."
+				<br>—— Perintah Penangkapan dibuat oleh Interastral Peace Corporation </p>
+			</div>
+		</div>	
+		
+		<div id="MC Fire" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="MC Fire.gif" style="width:438px; height:482px;">
+				<p>Anak muda yang naik ke Astral Express. 
+				<br>Dia memilih untuk bertualang dengan Astral Express demi menghilangkan krisis yang disebabkan Stellaron.</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Kamu tiba di "Kota Pelestarian".
+				<br>Setelah tirai salju, angin menusuk seperti pedang besi, tapi api kecil tetap menyala.
+				<br>Dari kejauhan, tidak akan terdengar tanah yang sama-sama bergetar, hanya ada suara ratapan orang-orang yang menghadapi angin.</p>
+				</p>
+				<p>Setelah menghadapi musuh dari luar, kebekuan abadi, dan tanah yang terbelah, kerusuhan mulai terjadi di dalam benteng.
+				<br>Kamu mencoba menawarkan bantuan, tapi malah ditolak.
+				<br>Beberapa orang pernah merendahkan dan salah paham akan dirimu, tapi kamu tetap berdiri di samping mereka dan membantu mereka menemukan jalan mereka.
+				<br>Semakin banyak orang yang mulai peduli dan mencemaskan dirimu.
+				<br>Mereka menghadapi kesulitan dan mencari solusi bagi orang yang menderita.
+				<br>Pada akhirnya, mereka semua datang ke sisimu.</p>
+				<p>Di tengah es dan salju, kamu itu bagaikan api yang melindungi jiwa di dunia ini.
+				<br>Meskipun kamu harus membakar dirimu sendiri sepanjang waktu .....</p>
+			</div>	
+		</div>
+		
+		<div id="Fu Xuan" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Fu Xuan.png" style="width:438px; height:482px;">
+				<p>Kepala dari Divination Commission Xianzhou "Luofu".
+				<br>Orang yang menggunakan mata ketiga dan Matrix of Prescience untuk meramalkan rute Xianzhou serta hasil dari berbagai peristiwa.
+				<br>Orang bijak yang percaya diri dan blak-blakan.
+				<br>Dengan mata ketiga dan keahlian dalam mengurai Matrix of Prescience, Fu Xuan meramalkan jalur pelayaran Xianzhou dan meramalkan peruntungannya. Dia sangat meyakini bahwa apa pun yang dilakukannya adalah "solusi terbaik" untuk segala situasi.
+				<br>Fu Xuan menunggu janji sang jenderal untuk "berhenti dari jabatan dan memberinya kesempatan", namun tampaknya hari itu belum kunjung tiba ... dan masih jauh.
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Setelah bertahun-tahun, Fu Xuan selalu teringat akan saat dirinya mendapat izin untuk masuk ke "perpustakaan" dan ditanya.</p>
+				<p>"Apa yang sedang kamu pikirkan?" Tanya orang tua buta dengan kacamata hitam. Tangannya menopang tongkat, kepalanya sedikit miring sambil menunggu jawaban dari gadis itu.</p>
+				<p>"Apakah semua momen ketika kita bisa membuat pilihan ... sudah ditentukan oleh takdir? Atau jika pada saat itu, aku bisa memprediksi lebih akurat, meskipun hanya satu dari sejuta, aku bisa membuat pilihan yang tepat dan mencegah mereka pergi?" Gadis itu memejamkan setengah matanya, seperti bertanya dan menjawab dirinya sekaligus.</p>
+				<p>"Setiap saat, kita berdiri di pusat labirin yang kita sendiri langkahi." Orang tua buta itu dengan lembut mengetuk-ngetuk tongkatnya. "Aku tak bisa memberikan jawaban. Aku hanya bisa memberikan pertanyaan ... dan pandangan untuk melihat pertanyaan. Dan dari perjalananmu sejauh ini, yang kamu cari dariku pasti bukanlah jawaban."</p>
+				<p>"Kalau begitu berikan aku 'mata'. Tidak peduli apakah takdir sudah diputuskan dari awal, sebagai Diviner, aku ingin mendapat penglihatan lebih jelas."</p>
+				<p>"Seperti yang kamu harapkan. Tapi tubuh fisik orang Xianzhou akan bertahan. Menerima 'mata' dariku berarti menerima penderitaan yang abadi. Dibandingkan dengan sebuah alat pengetahuan, mata ini lebih seperti 'alat penyiksaan'."</p>
+				<p>"Bukankah ini sejalan dengan prinsip Wisdomwalker? Bahwa pengetahuan diperoleh dari penderitaan? Aku tidak ingin membuat kesalahan yang sama dalam pilihan masa depan."</p>
+				<p>....
+				<p>Dalam kebingungan yang mengikuti pemberian "matanya", dia menyaksikan banyak kejadian masa lalu.</p>
+				<p>Dia melihat dirinya di masa kecil duduk dengan tegak, tak henti membaca. Dia melihat ayahnya dengan penuh sayang mengetuk keningnya, dengan bangga memuji kecerdasan dan keanggunannya. Dia melihat orang tua menunjukkan kepadanya sejarah gemilang klan Fu sebagai keluarga terhormat Stargazer di Xianzhou Yuque. Dia melihat para Diviner merencanakan dengan hati-hati, meramalkan masa depan yang gemilang baginya — dia akan naik takhta sebagai Master Diviner.</p>
+				<p>"Ini masa depanku?"</p>
+				<p>"Semua hal sudah ditakdirkan dan seharusnya tidak dicari dengan usaha manusia. Ini adalah takdirmu. Hasil ramalan telah disampaikan kepada Master Diviner Jing Tian, dan beliau setuju untuk secara pribadi mengawasi studimu. Ini adalah anugerah besar yang telah kamu peroleh."</p>
+				<p>Semua masa lalu tumpang tindih dalam kabut probabilitas ... seperti mimpi dan kenyataan, berubah datang dan pergi di tepi kesadaran, membentang menjadi masa depan yang tak terhitung. Dia berusaha sekuat tenaga untuk memilah, dalam momen yang luas ini, mencari hari ketika dia resmi menjadi seorang Diviner.</p>
+			</div>
+		</div>	
+		
+		<div id="March 7th" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="March 7th.png" style="width:438px; height:482px;">
+				<p>Gadis yang sempat tertidur dalam es abadi dan tidak mengetahui masa lalunya.
+				<br>Dia memilih untuk bertualang dengan Astral Express demi mencari kebenaran asal-usulnya.
+				<br>Sampai saat ini dia sudah menyiapkan hampir 67 versi "kisah hidupnya".
+				<br>Gadis muda yang unik dan bersemangat pada semua hal yang seharusnya "diminati" gadis-gadis seusianya, misalnya seperti berfoto. 
+				<br>Dia terbangun dari sebuah bongkahan es abadi hanya untuk menemukan bahwa dirinya tidak mengingat apa-apa tentang kehidupan dan masa lalunya. 
+				<br>Setelah mengalami depresi singkat, dia memutuskan untuk menamai dirinya sendiri dengan tanggal saat dia memperoleh hidup baru. 
+				<br>Kemudian, pada hari itu March 7th pun "lahir"
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Mengapa March 7th suka mengambil foto?
+				<br>"Pertama, gadis sepertiku seharusnya suka melakukan ini"
+				<br>"Kedua, semua hal yang kamu foto tidak akan terlupakan."</p>
+				<p>Apa pendapat March 7th tentang fotografi?
+				<br>"Pertama, perlu untuk mengambil gambar detail lokal untuk hidangan gelap, karena 'difoto sama dengan makan, harus menikmatinya dengan hati-hati'."
+				<br>"Kedua, jika memotret dengan mata tertutup, akan dapat menangkap ekspresi orang lain dengan mata tertutup."</p>
+				<p>Mengapa March 7th menggantung kamera di badannya?
+				<br>"Lain kali siapa yang ingin menyegelku dalam es, mereka harus menyegel kamera bersama denganku!"</p>
+				<p>Jadi kenapa March 7th tidak memotret menggunakan posel?
+				<br>"Benar juga, kenapa ya ... hm, ya seperti sebuah ritual saja!"</p>
+			</div>
+		</div>	
+		
+		<div id="Gepard" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Gepard.png" style="width:438px; height:482px;">
+				<p>
+				Kapten Silvermane Guard, salah satu tentara terbaik Belobog.
+				<br>Dia bertindak sesuai dengan perkataannya, teliti, waspada dan selalu jujur pada dirinya sendiri.
+				<br>Dia lahir di keluarga bangsawan Landau.
+				<br>Di kota Belobog yang terus diserang badai salju; sandang, pangan, papan, dan transportasi masyarakat masih bisa normal seperti dulu ...
+				<br>Hal itu karena Gepard dan Silvermane Guard yang dipimpinnya. Mereka telah menjaga kedamaian dalam keseharian masyarakat.
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Kapten muda berdiri di benteng utara.</p>
+				<p>Dia melihat ke bawah ke bumi yang pucat. Dia melihat bahwa makhluk dari Fragmentum membentuk awan bergulir di garis salju yang luas. Dia melihat Silvermane Guard yang tak kenal takut berdiri di dekat kota, seperti tembok pembatas yang kokoh.</p>
+				<p>Itu adalah posisi aslinya. Ketika dia masih seorang prajurit yang rendah hati, dia bersumpah untuk menjadi perisai terkuat Belobog, harus hidup dan mati bersama rekan-rekannya, bahkan sebagai kapten. Ini sama sekali bukan lelucon oleh Silvermane Guard pada malah hari mengobrol di sekitar api, karena Qlipoth adalah saksi dari sumpah ini.</p>
+				<p>Namun, saat ini dia gagal muncul di tempat di mana dia seharusnya berada — ini adalah permintaan dari Supreme Guardian.
+				<p>Apa sebenarnya yang dipikirkan oleh Supreme Guardian? Kapten muda itu tidak mengerti. Namu, dia segera memerintahkan dirinya untuk fokus pada perang saat ini.</p>
+				<p><em>"Ingat, Gepard Landau ..."
+				<br>"Keraguan melahirkan kesombongan, keraguan melahirkan kejahatan. Sebagai model Belobog, kamu tidak seharusnya terlalu banyak berpikir."</em></p>
+				<p>Kapten muda berdiri di benteng utara.</p>
+				</p>
+			</div>
+		</div>	
+		
+		<div id="Luocha" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Luocha.png" style="width:438px; height:482px;">
+				<p>
+				Seorang pedagang asing dari luar angkasa yang membawa peti mati kemanapun dia pergi.
+				<br>Sangat ahli dalam ilmu medis.
+				<br>Seorang pemuda tampan berambut pirang membawa peti mati besar.
+				<br>Sebagai seorang pedagang dari luar angkasa, dia tidak beruntung dan terlibat dalam krisis Stellaron di Xianzhou "Luofu".
+				<br>Dan itulah penyebab dia menyadari kalau keterampilan medisnya yang hebat akan sangat berguna.
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p><em>Apa identitas Anda?"
+				<br>"Pedagang."
+				<br>"Apa tujuan Anda datang?"
+				<br>"Berbisnis."
+				<br>"Apakah Anda bersedia untuk berjanji, tidak akan melanggar hukum Xianzhou Alliance, melakukan aktivitas bisnis sesuai dengan hukum dan peraturan, dan tidak melakukan aktivitas di luar lingkup izin visa?" "Tentu saja, aku berjanji." "Apakah Anda bersedia berjanji, tidak akan melakukan penelitian ilegal yang berkaitan dengan 'umur panjang'?"
+				<br>"Hm ... Aku berjanji."
+				<br>"Bagus, tolong tanda tangan di sini."</em></p>
+				<p><em>"Tuan Luocha, selamat datang di Xianzhou 'Luofu'."</em></p>
+			</div>
+		</div>	
+		
+		<div id="Bailu" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Bailu.png" style="width:438px; height:482px;">
+				<p>Tetua Tertinggi Vidyadhara yang juga dikenal sebagai "Wanita Penyembuh" di Xianzhou "Luofu".
+				<br>Dia menggunakan ilmu kedokteran khusus dan "perawatan medis" yang hanya dapat diberikan oleh Klan Naga Vidyadhara untuk menyelamtkan nyawa
+				<br>Gadis muda yang lincah dari ras Vidyadhara, dikenal sebagai "Wanita Penyembuh" karena keahliannya dalam bidang pengobatan...
+				<br>Sering memberikan resep yang aneh, seperti "banyak minum air panas" dan "tidur dan istirahat saja".
+				<br>Karena tidak bisa melihat orang menderita, dia selalu menutup mata ketika mengobati pasiennya.
+				<br> — Yang penting mereka sembuh, kan?</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<em>
+				<p>"Rekam Medis Umum Alchemy Commission • Buku Ke 48 • Kasus Ke 1.246</p>
+				<p>Dokter yang bertanggung jawab: Bailu.</p>
+				<p>Pasien: Moonchaser (Foxian), perempuan, 62 tahun.</p>
+				<p>Keluhan: Salah makan permen coklat yang dijual orang luar, merasa haus, seluruh tubuh nyeri, terutama di bagian perut. Napas pendek, bulu ekor rontok.</p>
+				<p>Diagnosis: Keracunan makanan.</p>
+				<p>Resep: 1 Mace ginseng, 1 Mace 1 Candareen kayu manis, 1 botol cairan jade gandum, 1 jilid "Hal yang Harus Diketahui Tentang Makanan Terlarang".</p>
+				<p>Aturan Pakai: Rebus ginseng dan kayu manis mentah dengan ramuan anggur biji-bijian sampai airnya menyusut separuh, kemudian saring dan buang residunya. Minum sebanyak yang kamu mau, bahkan sampai muntah; Salin "Hal yang Harus Diketahui Tentang Makanan Terlarang" sebanyak 500 kali, sampai kamu bisa mengingatnya.</p>
+				<p>Catatan: Penyakit keracunan makanan biasa. Sakit ringan di organ dalam sudah disembuhkan dengan Draconic Ichor. Minum obat muntah sesuai resep untuk mengeluarkan zat beracun yang tersisa. Selain itu, walaupun umurnya panjang dan tubuhnya kuat, Foxian tidak boleh makan coklat. itu adalah pengetahuan umum!!!</p>
+				<p>Lalu, jangan membuat pasien dengan sakit ringan seperti ini menunggu terlalu lama. Kamu bisa langsung membangunkanku! Selain itu, apa kalian bisa memberi aku pasien dengan kasus yang sulit? Apa kalian mau menyia-nyiakan kemampuanku?</p>
+				</em>
+			</div>
+		</div>	
+		
+		<div id="Huohuo" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Huohuo.png" style="width:438px; height:482px;">
+				<p>Hakim magang Ten-Lords Commission dari Xianzhou Luofu, seorang gadis Foxian yang dirasuki oleh Heliobus.
+				<br>Dia adalah seorang gadis pemalu dan lemah yang takut pada segala macam hal-hal aneh, tapi bertanggung jawab untuk menarik dan menaklukkan roh jahat.
+				<br>Gadis Foxian yang menyedihkan dan lemah, juga hakim magang Ten-Lords Commission Luofu yang takut dengan hantu tapi harus menangkap hantu. 
+				<br>Karena hakim Ten-Lords Commission mengurung Heliobus bernama "Tail" di dalam ekornya, dia pun mendapat julukan "pembawa sial" karena sering menarik makhluk jahat. 
+				<br>Takut akan hantu, tapi justru selalu ditugaskan menangkap hantu dan menyelesaikan tugas berat seperti menaklukkan iblis. 
+				<br>Dia selalu merasa kemampuannya tidak cukup, tapi tidak pernah berani untuk mengundurkan diri. 
+				<br>Dia tidak punya pilihan selain melanjutkan pekerjaannya dengan penuh rasa takut.</p>
+			</div>
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>	
+				<p>Ketika Huohuo yang pingsan siuman dan dibawa ke Ten-Lords Commission untuk pertama kalinya, dia tidak merasa takjub dengan segala hal yang ada di dalam Ten-Lords Commission, dia malah merasa tempat itu angker dan menakutkan. Seorang hakim berambut putih yang menyadari kegelisahan anak perempuan itu mencoba bertanya padanya dengan nada yang lembut. "Bagaimana ceritanya kamu bisa bertemu dengan "api" itu?" "Aku cuma ingat api itu jalan di pinggir jalan dan sudah hampir padam. A-aku mau bantu dia." "Jadi kamu taruh "api" itu di ekormu? Kenapa?" "A-aku juga tidak tahu. Waktu aku sadar, semuanya sudah terlanjur kulakukan ... Maaf, ya." "Kamu anak yang baik, tidak usah minta maaf ... Tapi mulai sekarang, kamu harus ada dalam perlindungan kami." "Iya ... terima kasih, Nona." "Namaku Hanya." "Oh, terima kasih, Nona Hanya. Na-namaku Huohuo." Hakim yang bernama Hanya itu teringat akan kejadian beberapa hari yang lalu .... Karena Ten-Lords Commission menerima permintaan bantuan, dia pun menjalankan perintah untuk melakukan inspeksi dan menemukan anak perempuan Foxian yang akan ditelan Heliobus. Saat itu, Hanya melihat anak perempuan itu masih kecil dan lemah, sedangkan Heliobus itu bukan Heliobus sembarangan. Kalau mau diselesaikan dengan kekerasan, pasti akan ada korban jiwa. Karena keadaannya mendesak, Hanya akhirnya mau tidak mau menuliskan jimat dan mengurung Heliobus itu di dalam ekor anak perempuan Foxian itu — Untungnya, Heliobus itu mulai merasukinya dari bagian ekor. "Keputusan ini sebenarnya tepat atau tidak ya ...?" Hakim itu bergumam sendiri. </p>
+			</div>
+		</div>		
+		
+		<div id="Lynx" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Lynx.png" style="width:438px; height:482px;">
+				<p>Putri bungsu keluarga Landau dan penjelajah alam terbaik Belobog. 
+				<br>Dia memang terlihat malas, tapi sebenarnya kemampuannya dalam melaksanakan sesuatu sangat kuat. 
+				<br>Aura "manusia dilarang mendekat" yang dipancarkan olehnya cuma untuk menghindari interaksi sosial yang tidak diperlukan.
+				<br>Tentang bagaimana cara mendefinisikan interaksi sosial yang tidak diperlukan: "Hmm ... bukannya semua interaksi sosial memang tidak penting?"
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>Pemandangan di Snow Plains terasa begitu jauh dari keseharian di Belobog — jauh hingga gadis itu hanya bisa melihatnya dalam mimpi.</p>
+				<p>Dalam kesehariannya belajar, dia selalu membaca di buku sejarah tentang betapa luas dan beragamnya dunia sebelum Kebekuan Abadi terjadi. Namun saat Lynx bertanya kepada guru-gurunya tentang detail yang lebih spesifik, mereka akan selalu merespons dengan ekspresi putus asa,
+				<br>"Sayang sekali, jawabannya hanya ada di kedalaman Snow Plains ...."</p>
+				<p>Selama pelajaran geografi, Lynx sering mendengar gurunya menggambarkan fenomena langit yang aneh yang disebut "aurora". Dia membayangkan bagaimana pita cahaya tersebut pasti berwarna-warni dan selalu berubah-ubah. Namun ketika Lynx bertanya kepada guru mengapa dia tidak bisa mengamati aurora di dalam kota, guru selalu menjawab dengan ekspresi tak berdaya,
+				<br>"Sayang sekali, aurora hanya dapat terlihat di kedalaman Snow Plains ...."</p>
+				<p>Terhadap tempat yang begitu jauh itu, gadis itu selalu tidak bisa memperoleh jawaban yang diinginkannya.</p>
+				<p>Namun asumsikan jika gurunya benar, jika jawaban untuk semua masalah memang tersembunyi di Snow Plains ....</p>
+				<p>Bukankah cukup dengan pergi menyaksikan kedalaman Snow Plains bisa menjawab segalanya?</p>
+				<p>"Jadi ... aku mau pergi ke kedalaman Snow Plains dan melihat-lihat!"</p>
+				<p>"Hah?</p>
+				<p>"Apa?"</p>
+			</div>
+		</div>	
+		
+		<div id="Natasha" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+			<div class="mydiv">
+				<img src="Natasha.png" style="width:438px; height:482px;">
+				<p>Seorang dokter yang serius dan selalu memasang senyum misterius.
+				<br>Di Underworld yang sangat kekurangan sumber daya medis, Natasha adalah salah satu dokter yang melayani semua orang.
+				<br>Bahkan Hook yang paling nakal sekalipun akan memanggilnya dengan sopan, "Hai, Tante Natasha".
+				</p>
+			</div>	
+			<div class="text">
+				<h1>Kisah Karakter </h1>
+				<hr>
+				<p>"<em>Cepat, tekan di sini! Tekan untuk menghentikan pendarahan!</em>"</p>
+				<p>Natasha menatap kakaknya dengan panik. Di depannya terbaring seorang pria yang dibalut perban, tubuhnya berkedut kesakitan, dan kata-kata samar terus keluar dari mulutnya.</p>
+				<p>"<em>... Kamu sedang apa? Cepat! Tekan!</em>"</p>
+				<p>Ada amarah dalam perintah kakak, dan ... gadis yang tajam itu menangkapnya, sedikit kecewa. Natasha dengan cepat meraih lengan kanan pria itu dan menggunakan seluruh kekuatannya untuk menekan kapas hemostatik di bahunya.</p>
+				<p>Erangan yang menyayat hati keluar dari mulut pria yang terluka itu, tapi dia tidak bisa tenang sampai dia mendapat instruksi dari kakaknya.</p>
+				<p>Tidak tahu setelah berapa lama, orang yang terluka di depannya berhenti bernapas, dia menatap ke tubuh hampa di depannya.</p>
+				<p>"<em>Kamu sudah berusaha," kata kakak, nadanya kembali ke ketidakpedulian seperti biasanya,
+				<br> "Istirahatlah sebentar, masih ada yang terluka yang menunggu.</em>"</p>
+				<p>Dia membalik telapak tangan merah, jari-jarinya sudah kaku, dan bau darah merasuki hidungnya. Natasha membiarkan aroma itu menggerakkan hatinya, untuk menempuh jalan ini, dia tahu dia tidak bisa melakukan apa-apa selain membiasakan diri.</p>
+			</div>
+		</div>	
+</body>
+</html>
